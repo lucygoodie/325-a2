@@ -9,7 +9,7 @@ import {
     Text,
     View,
     Image,
-    TextInput} from 'react-native';
+    TextInput, SafeAreaView} from 'react-native';
 
 const TEST_USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
 
@@ -18,33 +18,33 @@ const Friends = ({navigation}) => {
     const [searchText, setSearchText] = useState('');
 
     return (
-        <View style={styles.container}>
-            <Mast>
-                <View style={styles.mast.friendsButtonStrip}>
+        <View style={[styles.layout.span]}>
+            <SafeAreaView style={[styles.layout.safeArea]}>
+                <View style={[styles.layout.topButtonArea, {justifyContent: 'flex-end',}]}>
                     <StylisedButton onPress={() => {navigation.navigate('AddFriend');}} buttonText={''}>
                         <Image source = {require('../assets/plus.png')}
                                resizeMode = 'contain'
-                               style = {{ width: 15, height: 15 }}/>
+                               style = {{ width: 18, height: 18, tintColor: '#383838' }}/>
                     </StylisedButton>
                 </View>
-                <View style={styles.mast.contentCol}>
-                    <View style={styles.mast.text}>
-                        <Text style={styles.mast.header}>Friends</Text>
-                    </View>
-                    <View style={styles.search.box}>
+
+                <View style={[styles.layout.mast, {bottom: "1%",}]}>
+                    <Text style={[styles.mast.text.heading, {paddingBottom: "1%"}]}>Friends</Text>
+
+                    <View style={styles.mast.search.box}>
                         <TextInput
-                            style={styles.search.input}
+                            style={styles.mast.search.input}
                             placeholder="Search..."
                             onChangeText={newText => setSearchText(newText)}/>
                     </View>
+
                 </View>
-            </Mast>
 
-            <View style={styles.screen}>
-                <FriendsList navigation={navigation}></FriendsList>
-            </View>
+                <View style={styles.layout.contentArea}>
+                    <FriendsList navigation={navigation}></FriendsList>
+                </View>
+            </SafeAreaView>
         </View>
-
     );
 };
 

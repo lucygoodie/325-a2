@@ -42,14 +42,15 @@ export default function CheckinList(props) {
     };
 
     return (
-        <View style = {styles.list.container}>
+        <View style = {styles.checkins.listContainer}>
             <FlatList
                 data={checkins.reverse()}
                 renderItem={renderCheckIn}
                 keyExtractor={(item) => item.id}
                 extraData={0}
                 ItemSeparatorComponent={renderSeparator}
-                ListFooterComponent={renderFooter(loading)}/>
+                ListFooterComponent={renderFooter(loading)}
+            />
         </View>
     );
 };

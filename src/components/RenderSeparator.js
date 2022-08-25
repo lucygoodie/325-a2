@@ -4,7 +4,7 @@ import { View } from 'react-native';
 
 const renderSeparator = () => {
     return (
-        <View style={styles.render.separator}/>
+        <View style={styles.list.separator}/>
     )
 };
 

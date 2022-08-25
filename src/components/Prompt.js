@@ -18,14 +18,22 @@ export default function Prompt(props) {
     console.log("Am I getting to 'Prompt'?");
 
     return (
-        <View style={styles.prompt.container}>
-            <TouchableOpacity onPress={props.onPress}>
-                <View style={{width: "5%", height: "120%", position: 'absolute', top: 0, backgroundColor: urgency_colours[props.urgency]}}/>
-                <View style={styles.prompt.text}>
-                    <Text style={styles.prompt.title}>{props.name}</Text>
-                    <Text style={styles.prompt.subtitle}>{subtitle}</Text>
+        <View>
+
+            <TouchableOpacity style={styles.home.promptContainer} onPress={props.onPress}>
+
+                <View style={styles.home.promptUrgency}>
+                    <View style={{flex: 1, backgroundColor: urgency_colours[props.urgency]}}/>
                 </View>
+
+                <View style={styles.home.promptText}>
+                    <Text style={styles.home.promptHeading}>{props.name}</Text>
+                    <Text style={styles.home.promptSubtitle}>{subtitle}</Text>
+                </View>
+
             </TouchableOpacity>
+
         </View>
+
     );
 }

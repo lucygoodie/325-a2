@@ -8,7 +8,7 @@ function EditFriend({route, navigation}) {
 
     const friend = route.params.friend;
 
-    console.log("Changing a file");
+    console.log("Changin a file");
 
     const [emptyForm, setEmptyForm] = useState(true);
     const [firstName, setFirstName] = useState(friend.f_name);

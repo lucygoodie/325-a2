@@ -1,115 +1,159 @@
 import { StyleSheet } from 'react-native';
 
+const backgroundColor = '#c3d7d9';
 
-const styles = StyleSheet.create({
+
+export default styles = StyleSheet.create({
+    layout: {
+        span: {
+            flex: 1,
+            backgroundColor: backgroundColor,
+        },
+        safeArea: {
+            flexDirection: 'column',
+            flex: 1,
+            backgroundColor: backgroundColor,
+        },
+        topButtonArea: {
+            flex: 2,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            paddingLeft: "1%",
+            paddingRight: "5%",
+            marginTop: "8%",
+        },
+        mast: {
+            flex: 2,
+            backgroundColor: backgroundColor,
+            justifyContent: 'flex-end',
+        },
+        contentArea: {
+            flex: 20,
+            backgroundColor: "#e3e3e3",
+        },
+    },
 
     mast: {
-        container: {
-            borderColor: 'black',
-            borderWidth: 0.1,
-            width: "100%",
-            flexDirection: 'column',
-            height: "20%",
-            backgroundColor: '#c3d7d9',
-            paddingTop: 50,
-            paddingBottom: 20,
-            justifyContent: 'space-between',
-        },
-        content: {
-            height: 80,
+        buttons: {
             flexDirection: 'row',
-            fontColor: 'black',
+            paddingLeft: "4%",
+            justifyContent: 'center',
             alignItems: 'center',
-            paddingLeft: 30,
-            paddingRight: 30,
-        },
-        contentCol: {
-            height: 80,
-            flexDirection: 'column',
-            fontColor: 'black',
-            paddingLeft: 30,
-            paddingRight: 30,
+            color: 'white',
+
+            text: {
+                fontWeight: "bold",
+                fontSize: 16,
+                color: "#545454",
+            },
         },
         text: {
-            flexDirection: 'column',
-            marginLeft: 20,
+            heading: {
+                fontSize: 25,
+                fontWeight: 'bold',
+                paddingLeft: "5%"
+            },
+            subtitle: {
+                fontSize: 12,
+                color: 'grey',
+                flexDirection: 'column',
+                paddingLeft: "5%"
+            },
         },
-        header: {
-            fontSize: 25,
-            fontWeight: 'bold',
+        search: {
+            box: {
+                margin: 3,
+                height: 30,
+                borderColor: 'grey',
+                borderWidth: 1,
+                backgroundColor: 'white',
+                width: '90%',
+                alignSelf: 'center',
+                justifyContent: 'center',
+            },
+            input: {
+                paddingLeft: 15,
+                paddingRight: 10,
+            },
         },
-        subtitle: {
-            fontSize: 12,
-            color: 'grey',
+    },
+
+    home: {
+        promptListContainer: {
+            backgroundColor: 'white',
+            borderColor: '#b0b0b0',
+            borderWidth: 2,
+            borderRadius: 3,
+            margin: "4%",
+            flex: 1,
+            paddingRight: "10%",
+            padding: "0.5%",
         },
-        contactImage: {
-            borderRadius: 35,
-            width: 70,
+        promptContainer: {
+            borderColor: '#757575',
+            borderWidth: 0.5,
+            borderRightWidth: 3,
+            borderBottomWidth: 3,
+            margin: "2%",
+            backgroundColor: "#e0e0e0",
+            borderRadius: 4,
+            flexDirection: 'row',
+            flex: 1,
             height: 70,
         },
-        buttonStrip: {
-            width: "100%",
-            height: 30,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            paddingLeft: 20,
-            paddingRight: 20,
-            alignItems: 'center',
+        promptText: {
+            flex: 14,
+            flexDirection: 'column',
         },
-        friendsButtonStrip: {
-            width: "100%",
-            height: 30,
-            flexDirection: 'row',
-            justifyContent: 'flex-end',
-            paddingLeft: 20,
-            paddingRight: 20,
-            alignItems: 'center',
-        },
-    },
-    search: {
-        box: {
-            margin: 3,
-            height: 30,
-            borderColor: 'grey',
-            borderWidth: 1,
-            backgroundColor: 'white',
-            width: '100%',
-        },
-        input: {
-            paddingLeft: 15,
-            paddingRight: 10,
-        },
-    },
-    button: {
-        // backgroundColor: 'light grey',
-        flexDirection: 'row',
-        // fontColor: 'black',
-        // borderColor: 'black',
-        // borderWidth: 1,
-        width: 60,
-        height: 20,
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: 'white',
-
-        text: {
+        promptHeading: {
+            fontSize: 18,
             fontWeight: "bold",
-            fontSize: 16,
-            color: "#545454",
+            paddingTop: "3.5%",
+            paddingLeft: "4%",
+            flex: 1,
+        },
+        promptSubtitle: {
+            fontSize: 14,
+            paddingLeft: "4%",
+            paddingBottom: "3.5%",
+            flex: 1,
+            color: '#707070',
+        },
+        promptUrgency: {
+            flex: 1,
+            paddingLeft: "4%",
+        },
+        promptShadow: {
+            backgroundColor: 'black',
+            position: 'absolute',
+            marginTop: -100,
+        },
+        promptDivider: {
+            backgroundColor: '#8d9899',
+            alignItems: 'center',
+            margin: "2%",
+            padding: "1%",
+            borderRadius: 3,
+        },
+        promptDividerText: {
+            color: 'white',
+            fontWeight: "bold",
         },
     },
-    container: {
-        flex: 1,
-        flexDirection: 'column',
-    },
-    screen: {
-        flex: 5
-    },
+
     list: {
-        container: {
-            bottom: 0,
-            height: 500,
+        separator: {
+            height: 1,
+            backgroundColor: '#e3e3e3',
+            margin: '1%',
         },
+        footer: {
+            paddingVertical: 20,
+            borderTopWidth: 1,
+            borderColor: '#CED0CE',
+        },
+
         item: {
             padding: 7,
             marginVertical: 4,
@@ -123,33 +167,28 @@ const styles = StyleSheet.create({
             textColor: 'black',
         },
     },
-    home: {
-        container: {
-            flex: 1,
-            flexDirection: 'column',
-            backgroundColor: '#e8e8e8',
-        },
-        screen: {
-            backgroundColor: 'white',
-            borderColor: 'light blue',
-            borderWidth: 0.5,
-            borderRadius: 3,
-            margin: 12,
-            height: '30%',
-        },
-    },
-
     friend: {
-        infoContainer: {
-            flex: 1,
+        image: {
+            borderRadius: 35,
+            width: 70,
+            height: 70,
+        },
+        mast: {
             flexDirection: 'row',
-            backgroundColor: '#cfcfcf',
+            alignSelf: 'flex-start',
+            paddingLeft: "10%",
+            bottom: "5%",
+        },
+        infoContainer: {
+            flexDirection: 'column',
+            justifyContent: 'center',
+            paddingLeft: "3%",
+            height: "75%",
         },
         infoDetail: {
             flex: 1,
-            backgroundColor: '#f2f2f2',
+            backgroundColor: 'white',
             justifyContent: 'center',
-            // alignItems: 'center',
             borderRadius: 5,
             margin: 15,
             paddingLeft: 15,
@@ -161,37 +200,42 @@ const styles = StyleSheet.create({
         infoTextSubtitle: {
             fontSize: 14,
         },
+        addCheckinButton: {},
         checkins: {
             flex: 6,
             backgroundColor: '#b3b3b3',
 
         },
-        addCheckinButton: {
-
-        }
     },
-    prompt: {
-        container: {
-            padding: 10,
-            marginVertical: 10,
-            marginHorizontal: 10,
-            backgroundColor: "#e0e0e0",
-            borderRadius: 10,
-        },
-        text:{
-            paddingLeft: "10%",
-        },
-        title: {
-            fontSize: 20,
-            fontWeight: "bold",
-        },
-        subtitle: {
-            fontSize: 14,
-            fontWeight: "bold",
+    navigation: {
+        bottomTabs: {
+            tabBarStyle: {
+                position: 'absolute',
+                backgroundColor: '#ffffff',
+                height: '10%',
+            },
+            tabScreen: {
+                alignItems: 'center',
+                justifyContent: 'center',
+                top: 5,
+            },
         },
     },
-    checkin: {
-        container: {
+    render: {
+        separator: {
+            height: 1,
+            width: '86%',
+            backgroundColor: '#CED0CE',
+            marginLeft: '5%',
+        },
+        footer: {
+            paddingVertical: 20,
+            borderTopWidth: 1,
+            borderColor: '#CED0CE',
+        },
+    },
+    checkins: {
+        listContainer: {
             padding: 10,
             marginVertical: 10,
             marginHorizontal: 10,
@@ -216,46 +260,169 @@ const styles = StyleSheet.create({
             fontWeight: "bold",
         },
     },
-    render: {
-        separator: {
-            height: 1,
-            width: '86%',
-            backgroundColor: '#CED0CE',
-            marginLeft: '5%',
-        },
-        footer: {
-            paddingVertical: 20,
-            borderTopWidth: 1,
-            borderColor: '#CED0CE',
-        },
-    },
-    navigation: {
-        bottomTabs: {
-            tabBarStyle: {
-                position: 'absolute',
-                backgroundColor: '#ffffff',
-                height: '10%',
-            },
-            tabScreen: {
-                alignItems: 'center',
-                justifyContent: 'center',
-                top: 5,
-            },
-        },
-    },
-    editFriend: {
-        image: {
-            borderRadius: 50,
-            width: 100,
-            height: 100,
-            borderColor: 'grey',
-            borderWidth: 0.5,
-            marginBottom: 0,
-        },
-        text: {
-            alignSelf: 'center',
-        },
-    },
+
+
 });
 
-export default styles;
+
+    // ////////////////////// OK UNDER HERE IS JUST OLD CRAP
+    //
+    //
+    // mast1: {
+    //     container: {
+    //         borderColor: 'black',
+    //         borderWidth: 0.1,
+    //         width: "100%",
+    //         flexDirection: 'column',
+    //         height: "20%",
+    //         backgroundColor: backgroundColor,
+    //         justifyContent: 'space-between',
+    //         paddingTop: "5%",
+    //     },
+    //     content: {
+    //         flexDirection: 'row',
+    //         fontColor: 'black',
+    //         alignItems: 'center',
+    //         paddingLeft: 30,
+    //         paddingRight: 30,
+    //     },
+    //     contentCol: {
+    //         height: 80,
+    //         flexDirection: 'column',
+    //         fontColor: 'black',
+    //         paddingLeft: 30,
+    //         paddingRight: 30,
+    //     },
+    //     text: {
+    //         flexDirection: 'column',
+    //         marginLeft: 20,
+    //     },
+    //     header: {
+    //         fontSize: 25,
+    //         fontWeight: 'bold',
+    //     },
+    //     subtitle: {
+    //         fontSize: 12,
+    //         color: 'grey',
+    //     },
+    //     contactImage: {
+    //         borderRadius: 35,
+    //         width: 70,
+    //         height: 70,
+    //     },
+    //     buttonStrip: {
+    //         width: "100%",
+    //         height: 30,
+    //         flexDirection: 'row',
+    //         justifyContent: 'space-between',
+    //         paddingLeft: 20,
+    //         paddingRight: 20,
+    //         alignItems: 'center',
+    //         flex: 1,
+    //     },
+    //     friendsButtonStrip: {
+    //         width: "100%",
+    //         height: 30,
+    //         flexDirection: 'row',
+    //         justifyContent: 'flex-end',
+    //         paddingLeft: 20,
+    //         paddingRight: 20,
+    //         alignItems: 'center',
+    //     },
+    // },
+    //
+    // search: {
+    //     box: {
+    //         margin: 3,
+    //         height: 30,
+    //         borderColor: 'grey',
+    //         borderWidth: 1,
+    //         backgroundColor: 'white',
+    //         width: '100%',
+    //     },
+    //     input: {
+    //         paddingLeft: 15,
+    //         paddingRight: 10,
+    //     },
+    // },
+    //
+    // container: {
+    //     flex: 1,
+    //     flexDirection: 'column',
+    // },
+    // screen: {
+    //     flex: 5
+    // },
+    //
+    //     },
+    //
+    // friend1: {
+    //     infoContainer: {
+    //         flex: 1,
+    //         flexDirection: 'row',
+    //         backgroundColor: '#cfcfcf',
+    //     },
+    //     infoDetail: {
+    //         flex: 1,
+    //         backgroundColor: '#f2f2f2',
+    //         justifyContent: 'center',
+    //         // alignItems: 'center',
+    //         borderRadius: 5,
+    //         margin: 15,
+    //         paddingLeft: 15,
+    //     },
+    //     infoTextHeader: {
+    //         fontSize: 14,
+    //         fontWeight: 'bold',
+    //     },
+    //     infoTextSubtitle: {
+    //         fontSize: 14,
+    //     },
+    //     checkins: {
+    //         flex: 6,
+    //         backgroundColor: '#b3b3b3',
+    //
+    //     },
+    //     addCheckinButton: {
+    //
+    //     }
+    // },
+    // prompt: {
+    //     container: {
+    //         padding: 10,
+    //         marginVertical: 10,
+    //         marginHorizontal: 10,
+    //         backgroundColor: "#e0e0e0",
+    //         borderRadius: 10,
+    //     },
+    //     text:{
+    //         paddingLeft: "10%",
+    //     },
+    //     title: {
+    //         fontSize: 20,
+    //         fontWeight: "bold",
+    //     },
+    //     subtitle: {
+    //         fontSize: 14,
+    //         fontWeight: "bold",
+    //     },
+    // },
+    // checkin: {
+
+    // },
+
+
+    // editFriend: {
+    //     image: {
+    //         borderRadius: 50,
+    //         width: 100,
+    //         height: 100,
+    //         borderColor: 'grey',
+    //         borderWidth: 0.5,
+    //         marginBottom: 0,
+    //     },
+    //     text: {
+    //         alignSelf: 'center',
+    //     },
+    // },
+// );

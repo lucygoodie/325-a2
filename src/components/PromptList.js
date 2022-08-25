@@ -3,58 +3,57 @@ import Prompt from "../components/Prompt";
 import { renderSeparator } from "../components/RenderSeparator.js";
 import { renderFooter } from "../components/RenderFooter.js";
 import styles from '../Styles.js';
-import { daysBetween } from '../helpers.js';
+import { daysBetween, comparePrompts, frequencyInDays } from '../helpers.js';
 import { get } from '../database.js';
 import { where } from "firebase/firestore";
 import {
+    Text,
     FlatList,
     View,
-    ActivityIndicator } from 'react-native';
-
-// have to get users friends and apply logic to find PROMPTS:
-// anyone with birthdays today
-// anyone who user is due to check in with
-
-function sectionPromps(prompts) {
-    let b = [];
-    forEach
-};
+    ActivityIndicator, SectionList } from 'react-native';
 
 export default function PromptList(props) {
 
     const user_id = props.user_id;
 
     const [loading, setLoading] = useState(false);
-    const [friends, setFriends] = useState([]);
-    const [prompts, setPrompts] = useState([]);
-    const [checkins, setCheckins] = useState([]);
-
-    useEffect(() => {
-        get("connections", [where("user_id", "==", user_id)], "")
-            .then( res => { setFriends(res) });
-    }, []);
+    const [sectionedPrompts, setSectionedPrompts] = useState([]);
 
     useEffect(() => {
         get("checkins", [where("user_id", "==", user_id)], "date")
-            .then( res => { setCheckins(res) });
-    }, []);
+            .then((checkins) => {
+                get("connections", [where("user_id", "==", user_id)], "")
+                    .then( friends => {
 
-    console.log("Am I getting to 'PromptList'?");
+                        let birthdays = [];
+                        let overdue = [];
+                        let prompts1 = [];
 
-    useEffect(() => {
-        setPrompts(friends.map(
-            (friend) => {
-                var logs = (checkins.filter((c) => { return c.friend_id === friend.id}))
-                var log = logs.length > 0 ?
-                    daysBetween((new Date((logs[logs.length - 1]).date)), new Date())
-                    // daysBetween(new Date((logs[logs.length - 1]).date), new Date())
-                    : Number.MAX_VALUE;
-                return {...friend, daysSinceCheckIn: log};
-            }));
+                        // TODO
+                        // set the correct urgency
+
+                        friends.forEach( friend => {
+                            var friendCheckIns = (checkins.filter((c) => { return c.friend_id === friend.id}));
+                            var lastCheck = friendCheckIns.length > 0 ?
+                                daysBetween((new Date((friendCheckIns[friendCheckIns.length - 1]).date)), new Date()) : Number.MAX_VALUE;
+                            var howOverdue = lastCheck - frequencyInDays(friend.reminder_frequency);
+
+                            var obj = {...friend, daysSinceCheckIn: lastCheck, overdueBy: howOverdue};
+                            prompts1.push(obj);
+
+                            if ((new Date()).toDateString() === new Date(friend.dob).toDateString()) {
+                                birthdays.push(obj);
+                            } else if (howOverdue > 0) {
+                                overdue.push(obj);
+                            }
+                        });
+
+                        setSectionedPrompts((birthdays.length > 0) ? [{title: "Birthdays", data: birthdays}, {title: "Prompts", data: overdue.sort(comparePrompts)}] :
+                        [{title: "Prompts", data: overdue.sort(comparePrompts)}] );
+                    });
+            });
         setLoading(true);
     }, []);
-
-    console.log(prompts);
 
     function renderPrompt ({ item }) {
         return (
@@ -69,12 +68,17 @@ export default function PromptList(props) {
 
     return (
         <View style = {styles.list.container}>
-            <FlatList
-                data={prompts}
+            <SectionList
+                sections={sectionedPrompts}
                 renderItem={renderPrompt}
-                keyExtractor={(item) => item.id}
+                keyExtractor={(item, index) => item + index}
                 ItemSeparatorComponent={renderSeparator}
-                ListFooterComponent={renderFooter(loading)}/>
+                ListFooterComponent={renderFooter(loading)}
+                renderSectionHeader={({ section: { title } }) =>
+                    (<View style={styles.home.promptDivider}>
+                        <Text style={styles.home.promptDividerText}>{title.toUpperCase()}</Text>
+                    </View>)}
+            />
         </View>
     );
 };

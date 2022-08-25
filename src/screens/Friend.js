@@ -11,6 +11,7 @@ import { renderFooter } from "../components/RenderFooter.js";
 import styles from '../Styles.js';
 import {
     StyleSheet,
+    SafeAreaView,
     Text,
     View,
     Button,
@@ -22,13 +23,15 @@ const USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
 
 function Friend({route, navigation}) {
 
+
     const friend = route.params.friend;
     const user_id = USER_ID;
 
     return (
-        <View style={styles.container}>
-            <Mast>
-                <View style={styles.mast.buttonStrip}>
+        <View style={[styles.layout.span]}>
+            <SafeAreaView style={[styles.layout.safeArea]}>
+
+                <View style={[styles.layout.topButtonArea]}>
                     <StylisedButton onPress={() => navigation.goBack(null)} buttonText={""}>
                         <Image source = {require('../assets/back.jpg')}
                                resizeMode = 'contain'
@@ -37,37 +40,43 @@ function Friend({route, navigation}) {
                     <StylisedButton onPress={() => {navigation.navigate('EditFriend', {friend: friend});}} buttonText={"Edit"}>
                     </StylisedButton>
                 </View>
-                <View style={styles.mast.content}>
-                            <Image source={require('../assets/friend.jpg')} resizeMode = 'contain' style={styles.mast.contactImage}/>
-                    <View style={styles.mast.text}>
-                        <Text style={styles.mast.header}>{friend.f_name + " " + friend.l_name}</Text>
-                    </View>
-                </View>
-            </Mast>
 
-            <View style={styles.screen}>
-                <View style={styles.friend.infoContainer}>
-
-                    <View style={styles.friend.infoDetail}>
-                        <Text style={styles.friend.infoTextHeader}>Birthday</Text>
-                        <Text style={styles.friend.infoTextSubtitle}>{formatBirthdayHelper(new Date(friend.dob))}</Text>
-                    </View>
-
-                    <View style={styles.friend.infoDetail}>
-                        <Text style={styles.friend.infoTextHeader}>Reminder Frequency</Text>
-                        <Text style={styles.friend.infoTextSubtitle}>{formatReminderFrequency(friend.reminder_frequency)}</Text>
+                <View style={[styles.layout.mast, styles.friend.mast]}>
+                    <Image source={require('../assets/placeholder.bmp')} resizeMode = 'contain' style={styles.friend.image}/>
+                    <View style={[styles.mast.text, {top: "2%"}]}>
+                        <Text style={styles.mast.text.heading}>{friend.f_name + " " + friend.l_name}</Text>
+                        <Text style={[styles.mast.text.subtitle, {paddingLeft: "12%"}]}>Last checked in...</Text>
                     </View>
                 </View>
 
-                <View style={styles.friend.checkins}>
-                    <View style = {styles.list}>
-                        <CheckinList
-                            user_id={user_id}
-                            friend_id={friend.id}/>
+                <View style={styles.layout.contentArea}>
+
+                    <View style={[styles.home.promptListContainer, {flexDirection: 'row', flex: 2}]}>
+
+                        <View style={[styles.home.promptContainer, styles.friend.infoContainer]}>
+                            <Text style={styles.friend.infoTextHeader}>Reminder Frequency</Text>
+                            <Text style={styles.friend.infoTextSubtitle}>{formatReminderFrequency(friend.reminder_frequency)}</Text>
+                        </View>
+
+                        <View style={[styles.home.promptContainer, styles.friend.infoContainer]}>
+                            <Text style={styles.friend.infoTextHeader}>Birthday</Text>
+                            <Text style={styles.friend.infoTextSubtitle}>{formatBirthdayHelper(new Date(friend.dob))}</Text>
+                        </View>
                     </View>
+
+
+                    <View style={[styles.home.promptListContainer, {flex: 11}]}>
+                        <View style = {styles.list}>
+                            <CheckinList
+                                user_id={user_id}
+                                friend_id={friend.id}/>
+                        </View>
+                    </View>
+
                 </View>
+
+            </SafeAreaView>
             </View>
-        </View>
     );
 }
 
