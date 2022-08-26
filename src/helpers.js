@@ -7,6 +7,8 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 
 const frequency = ["None", "Weekly", "Fornightly", "Monthly", "BiMonthly"];
 
+const checkinType = ["Birthday", "messaged", "had a call with", "In person"];
+
 const frequency_to_days = [0, 7, 14, 28, 56];
 
 
@@ -51,4 +53,14 @@ const frequencyInDays = (rem_freq) => {
     return frequency_to_days[rem_freq];
 };
 
-export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays };
+const checkInText = (name, type) => {
+    if (type === 0) {
+        return "You wished " + name + " a happy birthday.";
+    } else if (type === 3) {
+        return "You saw " + name + " in person."
+    } else {
+        return"You " + checkinType[type] + " " + name;
+    }
+};
+
+export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText };

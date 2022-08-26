@@ -33,9 +33,12 @@ function Friend({route, navigation}) {
 
                 <View style={[styles.layout.topButtonArea]}>
                     <StylisedButton onPress={() => navigation.goBack(null)} buttonText={""}>
-                        <Image source = {require('../assets/back.jpg')}
+                        <Image source = {require('../assets/back.bmp')}
                                resizeMode = 'contain'
-                               style = {{ width: 15, height: 15 }}/>
+                               style = {{ width: 20, height: 20 }}
+                               borderRadius={10}
+
+                        backgroundColor='white' />
                     </StylisedButton>
                     <StylisedButton onPress={() => {navigation.navigate('EditFriend', {friend: friend});}} buttonText={"Edit"}>
                     </StylisedButton>
@@ -43,17 +46,16 @@ function Friend({route, navigation}) {
 
                 <View style={[styles.layout.mast, styles.friend.mast]}>
                     <Image source={require('../assets/placeholder.bmp')} resizeMode = 'contain' style={styles.friend.image}/>
-                    <View style={[styles.mast.text, {top: "2%"}]}>
+                    <View style={[styles.mast.text, { justifyContent: 'center'}]}>
                         <Text style={styles.mast.text.heading}>{friend.f_name + " " + friend.l_name}</Text>
-                        <Text style={[styles.mast.text.subtitle, {paddingLeft: "12%"}]}>Last checked in...</Text>
                     </View>
                 </View>
 
                 <View style={styles.layout.contentArea}>
 
-                    <View style={[styles.home.promptListContainer, {flexDirection: 'row', flex: 2}]}>
+                    <View style={[styles.home.promptListContainer, {flexDirection: 'row', flex: 2, paddingRight: "0.5%", marginBottom: "2%"}]}>
 
-                        <View style={[styles.home.promptContainer, styles.friend.infoContainer]}>
+                        <View style={[styles.home.promptContainer, styles.friend.infoContainer, {flex: 1.15,}]}>
                             <Text style={styles.friend.infoTextHeader}>Reminder Frequency</Text>
                             <Text style={styles.friend.infoTextSubtitle}>{formatReminderFrequency(friend.reminder_frequency)}</Text>
                         </View>
@@ -65,17 +67,18 @@ function Friend({route, navigation}) {
                     </View>
 
 
-                    <View style={[styles.home.promptListContainer, {flex: 11}]}>
-                        <View style = {styles.list}>
+                    <View style={{flex: 11}}>
+                        <View style={[styles.home.promptDivider, {marginLeft: "4%", marginRight: "4%", marginBottom: "0.5%",}]}>
+                            <Text style={styles.home.promptDividerText}>LOG WITH {friend.f_name.toUpperCase()}</Text>
+                        </View>
                             <CheckinList
                                 user_id={user_id}
-                                friend_id={friend.id}/>
-                        </View>
+                                friend_id={friend.id}
+                                name={friend.f_name}/>
                     </View>
-
                 </View>
-
             </SafeAreaView>
+            <View style={styles.layout.unsafeBottomArea}/>
             </View>
     );
 }

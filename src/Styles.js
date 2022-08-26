@@ -32,6 +32,10 @@ export default styles = StyleSheet.create({
             flex: 20,
             backgroundColor: "#e3e3e3",
         },
+        unsafeBottomArea: {
+            backgroundColor: "#e3e3e3",
+            bottom: 0,
+        },
     },
 
     mast: {
@@ -248,19 +252,30 @@ export default styles = StyleSheet.create({
             backgroundColor: "black",
             borderRadius: 10,
         },
-        text:{
-            paddingLeft: "10%",
-        },
         title: {
-            fontSize: 20,
+            fontSize: 10,
             fontWeight: "bold",
+            paddingLeft: "2%",
         },
         subtitle: {
             fontSize: 14,
             fontWeight: "bold",
         },
     },
-
+    triangle: {
+        width: 0,
+        height: 0,
+        backgroundColor: "transparent",
+        borderStyle: "solid",
+        borderLeftWidth: 6,
+        borderRightWidth: 6,
+        borderBottomWidth: 12,
+        borderLeftColor: "transparent",
+        borderRightColor: "transparent",
+        borderBottomColor: "#cccccc",
+        transform: [{ rotate: "-90deg" }],
+        alignSelf: 'center',
+    },
 
 });
 
