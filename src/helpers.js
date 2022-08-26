@@ -63,4 +63,9 @@ const checkInText = (name, type) => {
     }
 };
 
-export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText };
+const getSection = (date) => {
+    let splitDate = date.split('-');
+    return (monthNames[parseInt(splitDate[1])] + " " + splitDate[0]);
+};
+
+export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText, getSection };

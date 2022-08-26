@@ -4,6 +4,7 @@ import { renderFooter } from "../components/RenderFooter.js";
 import { get } from '../database.js';
 import { where } from "firebase/firestore";
 import  CheckIn  from "../components/CheckIn.js";
+import { getSection } from "../helpers.js";
 import styles from '../Styles.js';
 import {
     FlatList,
@@ -24,18 +25,23 @@ export default function CheckinList(props) {
 
     const [loading, setLoading] = useState(false);
 
+
     useEffect(() => {
         get("checkins", [where("user_id", "==", user_id), where("friend_id", "==", friend_id)], "date")
             .then(
                 res => {
-                    res.forEach(checkin => {
-
+                    let c_list = [];
+                    res.forEach(c => {
+                        c_list.push({...c, section: getSection(c.date)});
                     });
-
-
-                    setCheckins(res);
-                    setLoading(true);
+                    setCheckins(c_list);
                 });
+
+        // SORT SECTIONS HERE?
+        /////////////////////////////////////////////////////// TODO
+
+        setLoading(true);
+
     }, []);
 
 
