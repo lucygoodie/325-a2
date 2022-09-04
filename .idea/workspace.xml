@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e16917f4-6146-426f-ab0c-1de30c06c5e1" name="Default Changelist" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_08_2022_10_59_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_08_2022_10_59_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CheckIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CheckinList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckinList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FriendsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FriendsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Mast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Mast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prompt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Prompt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PromptList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PromptList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RenderFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RenderFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RenderSeparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RenderSeparator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StylisedButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StylisedButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/database.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/helpers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/AddFriend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/AddFriend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/EditFriend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/EditFriend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friends.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +21,11 @@
     <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -104,7 +88,7 @@
       <workItem from="1661393553071" duration="30315000" />
       <workItem from="1661459647203" duration="6335000" />
       <workItem from="1661475666081" duration="7788000" />
-      <workItem from="1662241405473" duration="9954000" />
+      <workItem from="1662241405473" duration="11582000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1661394361612</created>
@@ -127,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661493538731</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init commit">
+      <created>1662270610753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662270610753</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init commit">
+      <created>1662270654982</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662270654982</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
