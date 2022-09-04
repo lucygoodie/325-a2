@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e16917f4-6146-426f-ab0c-1de30c06c5e1" name="Default Changelist" comment="init commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +56,11 @@
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2" />
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\services" />
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\utils" />
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\styles" />
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\assets" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\designs" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +88,7 @@
       <workItem from="1661393553071" duration="30315000" />
       <workItem from="1661459647203" duration="6335000" />
       <workItem from="1661475666081" duration="7788000" />
-      <workItem from="1662241405473" duration="11582000" />
+      <workItem from="1662241405473" duration="12616000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1661394361612</created>
@@ -125,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662270654982</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init commit">
+      <created>1662272260769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1662272260769</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

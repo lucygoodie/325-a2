@@ -14,10 +14,10 @@
     "@react-navigation/stack": "^6.2.3",
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
-    "firebase": "^9.9.3",
+    "firebase": "^9.9.4",
     "react": "18.0.0",
     "react-native": "0.69.4",
-    "undefined": "firebase/app"
+    "redux": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
