@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import StylisedButton  from '../components/StylisedButton.js';
 import Mast from '../components/Mast.js';
 import {

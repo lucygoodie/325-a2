@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import Mast from '../components/Mast.js';
 import StylisedButton, { stylisedButton } from '../components/StylisedButton.js';
 import { Text, View, Image, TouchableOpacity, TextInput } from 'react-native';

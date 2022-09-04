@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import styles from '../Styles.js';
-import { checkInText } from "../helpers.js"
+import styles from '../styles/Styles.js';
+import { checkInText } from "../utils/helpers.js"
 import {
     Text,
     View,

@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import ListItem from "../components/ListItem";
 import { renderSeparator } from "../components/RenderSeparator.js";
 import { renderFooter } from "../components/RenderFooter.js";
-import styles from '../Styles.js';
-import { compareName } from "../helpers.js";
-import { get } from '../database.js';
+import styles from '../styles/Styles.js';
+import { compareName } from "../utils/helpers.js";
+import { get } from '../services/database.js';
 import { where } from "firebase/firestore";
 import {
     StyleSheet,

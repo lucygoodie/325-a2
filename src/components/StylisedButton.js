@@ -1,4 +1,4 @@
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import { Text, TouchableOpacity, View } from 'react-native';
 
 export default function StylisedButton(props) {

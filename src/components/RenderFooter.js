@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import {
     View,
     ActivityIndicator

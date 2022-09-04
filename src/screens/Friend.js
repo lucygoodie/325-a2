@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 // import {Avatar, Div, Icon, Input} from "react-native-magnus";
 import  CheckinList  from '../components/CheckinList.js';
-import { formatBirthdayHelper, formatReminderFrequency } from "../helpers.js"
-import { get } from '../database.js';
+import { formatBirthdayHelper, formatReminderFrequency } from "../utils/helpers.js"
+import { get } from '../services/database.js';
 import { where } from "firebase/firestore";
 import StylisedButton, { stylisedButton } from '../components/StylisedButton.js';
 import Mast from '../components/Mast.js';
 import { renderSeparator } from "../components/RenderSeparator.js";
 import { renderFooter } from "../components/RenderFooter.js";
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import {
     StyleSheet,
     SafeAreaView,
@@ -75,6 +75,25 @@ function Friend({route, navigation}) {
                                 user_id={user_id}
                                 friend_id={friend.id}
                                 name={friend.f_name}/>
+
+                        <View style={{
+                            width: "40%",
+                            height: "20%",
+                            backgroundColor: '#f5ab33',
+                            zIndex: 0,
+                            bottom: "0%",
+                            right: "2%",
+                            position: 'absolute',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderWidth: 0.5,
+                            borderRightWidth: 3,
+                            borderBottomWidth: 3,
+                            borderColor: '#875300'}}>
+                            <Text style={{
+                                color: "white",
+                                fontWeight: "bold"}}>+ Check In</Text>
+                        </View>
                     </View>
                 </View>
             </SafeAreaView>

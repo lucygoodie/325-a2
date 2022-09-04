@@ -4,7 +4,7 @@ import {
     View,
     TouchableOpacity
 } from 'react-native';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 
 const urgency_colours = ['#b0c4d9', '#e8c5c1', '#fcd7ac', '#fff8cc'];
 
@@ -14,8 +14,6 @@ export default function Prompt(props) {
 
     const subtitle = props.lastCheckIn === Number.MAX_VALUE ?
         "No check-ins with this friend" : ("Last checked in " + props.lastCheckIn + " days ago");
-
-    console.log("Am I getting to 'Prompt'?");
 
     return (
         <View>

@@ -2,15 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Prompt from "../components/Prompt";
 import { renderSeparator } from "../components/RenderSeparator.js";
 import { renderFooter } from "../components/RenderFooter.js";
-import styles from '../Styles.js';
-import { daysBetween, comparePrompts, frequencyInDays } from '../helpers.js';
-import { get } from '../database.js';
+import styles from '../styles/Styles.js';
+import { daysBetween, comparePrompts, frequencyInDays } from '../utils/helpers.js';
+import { get } from '../services/database.js';
 import { where } from "firebase/firestore";
 import {
     Text,
     FlatList,
     View,
-    ActivityIndicator, SectionList } from 'react-native';
+    ActivityIndicator,
+    SectionList } from 'react-native';
 
 export default function PromptList(props) {
 
@@ -27,7 +28,6 @@ export default function PromptList(props) {
 
                         let birthdays = [];
                         let overdue = [];
-                        let prompts1 = [];
 
                         // TODO
                         // set the correct urgency
@@ -39,9 +39,11 @@ export default function PromptList(props) {
                             var howOverdue = lastCheck - frequencyInDays(friend.reminder_frequency);
 
                             var obj = {...friend, daysSinceCheckIn: lastCheck, overdueBy: howOverdue};
-                            prompts1.push(obj);
 
-                            if ((new Date()).toDateString() === new Date(friend.dob).toDateString()) {
+                            var today = new Date();
+                            var bday = new Date(friend.dob);
+
+                            if ((today.getDate() === bday.getDate()) && (today.getMonth() === bday.getMonth())){
                                 birthdays.push(obj);
                             } else if (howOverdue > 0) {
                                 overdue.push(obj);

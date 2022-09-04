@@ -1,5 +1,5 @@
 import { collection, getDocs, query, where, orderBy, limit } from "firebase/firestore";
-import { db } from '../firebase-config.js';
+import { db } from '../../firebase-config.js';
 
 export async function get(collection_name, where, order, single=false)
 {

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Prompt from '../components/Prompt.js';
-import { formatDateHelper } from "../helpers.js"
+import { formatDateHelper } from "../utils/helpers.js"
 import PromptList from '../components/PromptList.js';
 import Mast from '../components/Mast.js';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 
 import {
     Text,

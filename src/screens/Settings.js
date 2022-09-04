@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Mast from '../components/Mast.js';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import {
     Text,
     View } from 'react-native';

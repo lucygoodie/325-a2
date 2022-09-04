@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home.js';
 import Friends from '../screens/Friends.js';
 import Settings from '../screens/Settings.js';
-import styles from '../Styles.js';
+import styles from '../styles/Styles.js';
 import {
     Text,
     View,

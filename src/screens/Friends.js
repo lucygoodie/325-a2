@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { renderSeparator } from "../components/RenderSeparator.js";
-import { compareName } from "../helpers.js";
-import styles from '../Styles.js';
+import { compareName } from "../utils/helpers.js";
+import styles from '../styles/Styles.js';
 import StylisedButton  from '../components/StylisedButton.js';
 import Mast from '../components/Mast.js';
 import FriendsList from '../components/FriendsList.js';
