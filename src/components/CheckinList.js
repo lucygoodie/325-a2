@@ -4,13 +4,13 @@ import { renderFooter } from "../components/RenderFooter.js";
 import { get } from '../database.js';
 import { where } from "firebase/firestore";
 import  CheckIn  from "../components/CheckIn.js";
-import { getSection } from "../helpers.js";
+import {comparePrompts, getSection} from "../helpers.js";
 import styles from '../Styles.js';
 import {
     FlatList,
     View,
     ActivityIndicator,
-    Text
+    Text, SectionList
 } from 'react-native';
 
 const TEST_USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
@@ -30,12 +30,26 @@ export default function CheckinList(props) {
         get("checkins", [where("user_id", "==", user_id), where("friend_id", "==", friend_id)], "date")
             .then(
                 res => {
-                    let c_list = [];
+                    var c_list = [];
                     res.forEach(c => {
+                        console.log(c.date);
                         c_list.push({...c, section: getSection(c.date)});
                     });
                     setCheckins(c_list);
-                });
+
+                    var sections = [...new Array([...new Set(c_list.map(item => item.section))].map(item => {
+                        var datas = c_list.filter((c) => { return c.section === item});
+                        // this needs to be a list
+                        return {title: item, data: [{datas},]}
+                    }))];
+
+                    setSectionedCheckins(sections);
+                    console.log('hiiiiiiiiiiii');
+                    console.log(sections);
+                    }
+                );
+
+
 
         // SORT SECTIONS HERE?
         /////////////////////////////////////////////////////// TODO
@@ -64,14 +78,17 @@ export default function CheckinList(props) {
 
         <View style = {[styles.home.promptListContainer, {marginTop: "0%", paddingRight: "0.5%"}]}>
             <View style={{flex: 10, zIndex: 1, position: 'absolute', width: "100%", bottom: "4%"}}>
-                <FlatList
-                    data={checkins.reverse()}
+
+                <SectionList
+                    sections={sectionedCheckins}
                     renderItem={renderCheckIn}
-                    keyExtractor={(item) => item.id}
-                    extraData={0}
+                    keyExtractor={(item, index) => item + index}
                     ItemSeparatorComponent={renderSeparator}
                     ListFooterComponent={renderFooter(loading)}
-                    inverted={true}
+                    renderSectionHeader={({ section: { title } }) =>
+                        (<View style={styles.home.promptDivider}>
+                            <Text style={styles.home.promptDividerText}>{title.toUpperCase()}</Text>
+                        </View>)}
                 />
 
                 <View style={{

@@ -65,7 +65,8 @@ const checkInText = (name, type) => {
 
 const getSection = (date) => {
     let splitDate = date.split('-');
-    return (monthNames[parseInt(splitDate[1])] + " " + splitDate[0]);
+    let month = monthNames[(parseInt(splitDate[1])-1)];
+    return (month + " " + splitDate[0]);
 };
 
 export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText, getSection };
