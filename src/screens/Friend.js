@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import {Avatar, Div, Icon, Input} from "react-native-magnus";
 import  CheckinList  from '../components/CheckinList.js';
 import { formatBirthdayHelper, formatReminderFrequency } from "../utils/helpers.js"
 import { get } from '../services/database.js';
@@ -19,7 +18,7 @@ import {
     FlatList
 } from 'react-native';
 
-const USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
+const USER_ID = 'G29z3jX0xQhJ99n7Ig7hAudGgVq1';
 
 function Friend({route, navigation}) {
 

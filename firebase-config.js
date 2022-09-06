@@ -1,8 +1,8 @@
-import { initializeApp } from "firebase/app";
-import { initializeFirestore } from "firebase/firestore";
-import { getFirestore, connectFirestoreEmulator } from "firebase/firestore";
-import { getAuth, connectAuthEmulator } from 'firebase/auth'
-import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
+
+
+const firebase = require('firebase/app');
+const firestore = require('firebase/firestore');
 
 const firebaseConfig = {
     databaseURL: 'https:// swen325-a2-app.firebaseio.com',
@@ -15,10 +15,13 @@ const firebaseConfig = {
     measurementId: "G-X63B38CLSV"
 };
 
-const app = initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
-const db = initializeFirestore(app, {
+const db = firestore.initializeFirestore(app, {
     experimentalForceLongPolling: true,
 });
 
-export { db };
+const authetication = getAuth(app);
+
+export { db, authetication };
+

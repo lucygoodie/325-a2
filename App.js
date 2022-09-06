@@ -1,20 +1,22 @@
-import * as React from 'react';
-import { useState, useEffect } from 'react';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import Stack from './src/navigation/Stack';
-import { db } from './firebase-config.js';
-import { collection, getDocs} from "firebase/firestore";
+import { Provider } from 'react-redux';
+import { Store } from './src/redux/store';
 
-const type = ["birthday", "message", "call", "in-person"];
-const frequency = ["None", "Weekly", "Fornightly", "Monthly", "BiMonthly"];
 
+// const type = ["birthday", "message", "call", "in-person"];
+// const frequency = ["None", "Weekly", "Fornightly", "Monthly", "BiMonthly"];
+
+// const store = configureStore();
 
 export default function App() {
 
-
     return (
+        <Provider store={Store}>
           <NavigationContainer>
               <Stack/>
           </NavigationContainer>
+        </Provider>
   );
 };
