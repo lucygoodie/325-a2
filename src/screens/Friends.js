@@ -11,8 +11,6 @@ import {
     Image,
     TextInput, SafeAreaView} from 'react-native';
 
-const TEST_USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
-
 const Friends = ({navigation}) => {
 
     const [searchText, setSearchText] = useState('');

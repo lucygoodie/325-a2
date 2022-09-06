@@ -6,6 +6,9 @@ import styles from '../styles/Styles.js';
 import { compareName } from "../utils/helpers.js";
 import { get } from '../services/database.js';
 import { where } from "firebase/firestore";
+import { connect } from 'react-redux';
+import { loadFriends, loadFriendsMock } from '../redux/actions/friends_actions';
+
 import {
     StyleSheet,
     FlatList,
@@ -14,26 +17,31 @@ import {
     ActivityIndicator
 } from 'react-native';
 
-const TEST_USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
+const USE_MOCK = true;
 
-export default function Friends(props) {
+function Friends(props) {
+
+    function loadFriendsFunc(id) {
+        if (USE_MOCK) {
+            props.loadFriendsMock(props.user_id);
+        } else {
+            props.loadFriends(props.user_id);
+        }
+    }
 
     const [selectedId, setSelectedId] = useState(null);
-    const [friends, setFriends] = useState([]);
+    // const [friends, setFriends] = useState([]);
     const [loading, setLoading] = useState(false);
 
     const [filteredDataSource, setFilteredDataSource] = useState([]);
     const [masterDataSource, setMasterDataSource] = useState([]);
 
+    // only load friends once after component mounting
     useEffect(() => {
-        get("connections", [where("user_id", "==", TEST_USER_ID)], "").then(
-            res => {
-                setFriends(res);
-                setLoading(true);
-                setFilteredDataSource(res);
-                setMasterDataSource(res);
-            });
+        loadFriendsFunc(props.user_id);
+        setLoading(true); // todo  ?
     }, []);
+
 
     function renderItem ({ item }) {
         return (
@@ -48,7 +56,7 @@ export default function Friends(props) {
     return (
         <View style = {styles.list.container}>
             <FlatList
-                data={friends.sort(compareName)}
+                data={props.friends.sort(compareName)}
                 renderItem={renderItem}
                 keyExtractor={(item) => item.id}
                 extraData={selectedId}
@@ -57,3 +65,10 @@ export default function Friends(props) {
         </View>
     );
 };
+
+const mapStateToProps = (state) => ({
+    user_id: state.userReducer.user_id,
+    friends: state.friendsReducer.friends,
+});
+
+export default connect(mapStateToProps, {loadFriends, loadFriendsMock}) (Friends);

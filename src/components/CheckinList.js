@@ -6,6 +6,7 @@ import { where } from "firebase/firestore";
 import  CheckIn  from "../components/CheckIn.js";
 import {comparePrompts, getSection} from "../utils/helpers.js";
 import styles from '../styles/Styles.js';
+import { connect } from 'react-redux';
 import {
     FlatList,
     View,
@@ -13,49 +14,31 @@ import {
     Text, SectionList
 } from 'react-native';
 
-const TEST_USER_ID = 'BjOxbgqe1SWS7QxWH5tX';
+function setSections(checkins) {
+    var sortedList = [];
 
-export default function CheckinList(props) {
+    checkins.forEach(checkin => {
+        sortedList.push({...checkin, section: getSection(checkin.date)});
+    });
 
-    const user_id = props.user_id;
-    const friend_id = props.friend_id;
+    var sections = [...new Set(sortedList.map(item => item.section))].map(item => {
+        var datas = sortedList.filter((c) => { return c.section === item});
+        // this needs to be a list
+        return {title: item, data: datas}
+    });
+    return sections;
+}
 
-    const [checkins, setCheckins] = useState([]);
+function CheckinList(props) {
+
     const [sectionedCheckins, setSectionedCheckins] = useState([]);
-
     const [loading, setLoading] = useState(false);
 
-
     useEffect(() => {
-        get("checkins", [where("user_id", "==", user_id), where("friend_id", "==", friend_id)], "date")
-            .then(
-                res => {
-                    var c_list = [];
-                    res.forEach(c => {
-                        c_list.push({...c, section: getSection(c.date)});
-                    });
-                    setCheckins(c_list);
-
-                    var sections = [...new Set(c_list.map(item => item.section))].map(item => {
-                        var datas = c_list.filter((c) => { return c.section === item});
-                        // this needs to be a list
-                        return {title: item, data: datas}
-                    });
-
-                    setSectionedCheckins(sections);
-                    setLoading(true);
-
-                }
-                );
-
-
-
-        // SORT SECTIONS HERE?
-        /////////////////////////////////////////////////////// TODO
-
-
-    }, []);
-
+        const checkins = props.friends.find(friend => friend.id === (props.friend_id)).checkins;
+        setSectionedCheckins(setSections(checkins));
+        setLoading(true);
+        }, []);
 
     function renderCheckIn ({ item }) {
         let splitDate = item.date.split('-');
@@ -104,3 +87,9 @@ export default function CheckinList(props) {
     );
 };
 
+const mapStateToProps = (state) => ({
+    user_id: state.userReducer.user_id,
+    friends: state.friendsReducer.friends,
+});
+
+export default connect(mapStateToProps)(CheckinList);

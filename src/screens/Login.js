@@ -1,29 +1,23 @@
-// import * from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from '../styles/Styles.js';
-import { useDispatch, useSelector } from 'react-redux';
-import {
-    Text,
-    View,
-    SafeAreaView,
-    TextInput,
-    TouchableOpacity} from 'react-native';
+import { connect } from 'react-redux';
+import { login, loginMock } from '../redux/actions/user_actions';
+import { Text, View, SafeAreaView, TextInput, TouchableOpacity} from 'react-native';
 
-// import { setName, setAge } from '../redux/actions/user_actions';
-import { login } from '../redux/actions/user_actions';
+const USE_MOCK = true;
 
-async function login_submit(usernameInput, passwordInput) {
+function Login(props) {
 
-}
+    function loginFunc(usernameInput, passwordInput) {
+        if (USE_MOCK) {
+            props.loginMock(usernameInput, passwordInput);
+        } else {
+            props.login(usernameInput, passwordInput);
 
-function Login({navigation}) {
-
+        }
+    }
     const [usernameInput, setUsernameInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
-
-    let {loggedIn, user} = useSelector(state => state.userReducer);
-
-    const dispatch = useDispatch();
 
     return (
         <View style={[styles.layout.span]}>
@@ -37,47 +31,29 @@ function Login({navigation}) {
                         style = {{shadowColor: 'black', elevation: 5, backgroundColor: 'white', borderWidth: 1, borderColor: 'black', width: '50%', height: '7%', paddingLeft: 10, margin: 5}}
                         placeholder="password"
                         onChangeText={text => setPasswordInput(text)}/>
-
                 <TouchableOpacity
                         onPress={() => {
-                            console.log('logged in before: ', loggedIn);
-                            dispatch(login(usernameInput, passwordInput)).then(() => {
 
-                                console.log('logged in after: ', loggedIn);
-                            });
+                            // todo need to WAIT until this function is finished execution before continuing
+                            loginFunc(usernameInput, passwordInput);
 
-                            // useEffect(() => {
-                            //
-                            // }, [loggedIn]);
-
-                        }
-                        }
-                        >
-                        <Text>Login</Text>
-                    </TouchableOpacity>
-
+                            // how do I wait until above function is finished before this
+                            if (props.user.user !== undefined) props.navigation.navigate("BottomTabs");
+                        }}>
+                        <Text>
+                            Login
+                        </Text>
+                </TouchableOpacity>
                 <View style={{bottom: 20, position: 'absolute',}}>
                     <Text>Don't have an account? Sign up</Text>
                 </View>
             </SafeAreaView>
         </View>
-
     );
 }
-//
-// function mapStateToProps(state) {
-//     return {
-//         loggedIn: state.userReducer.loggedIn
-//     };
-// }
-//
-// function mapDispatchToProps(dispatch) {
-//     return {
-//         login:(usernameInput, passwordInput) => {
-//             dispatch(login(usernameInput, passwordInput));
-//
-//         },
-//     };
-// }
 
-export default (Login);
+const mapStateToProps = (state) => ({
+    user: state.userReducer,
+});
+
+export default connect(mapStateToProps, {login, loginMock})(Login);

@@ -5,7 +5,6 @@ import {
     Text,
     View } from 'react-native';
 
-const TEST_USER_ID = 'G29z3jX0xQhJ99n7Ig7hAudGgVq1';
 
 function Settings() {
     return (

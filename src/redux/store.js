@@ -1,15 +1,17 @@
-
+// File to combine reducers and create redux store
 
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import userReducer from './reducers/user_reducer';
+import { friendsReducer } from './reducers/friends_reducer';
 
-const rootReducer = combineReducers({ userReducer });
+
+const rootReducer = combineReducers({ userReducer, friendsReducer });
 
 export const Store = createStore(rootReducer, applyMiddleware(thunk));
 
 //
-// // File to combine reducers and create redux store
+//
 //
 // import { createStore, combineReducers, applyMiddleware } from 'redux';
 // import thunk from 'redux-thunk';
@@ -30,5 +32,3 @@ export const Store = createStore(rootReducer, applyMiddleware(thunk));
 // //     );
 // //     return store;
 // // };
-//
-// export const store = createStore(rootReducer, applyMiddleware(thunk));

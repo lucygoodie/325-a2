@@ -1,37 +1,21 @@
-import React, { useState, useEffect } from 'react';
 import  CheckinList  from '../components/CheckinList.js';
 import { formatBirthdayHelper, formatReminderFrequency } from "../utils/helpers.js"
-import { get } from '../services/database.js';
-import { where } from "firebase/firestore";
 import StylisedButton, { stylisedButton } from '../components/StylisedButton.js';
-import Mast from '../components/Mast.js';
-import { renderSeparator } from "../components/RenderSeparator.js";
-import { renderFooter } from "../components/RenderFooter.js";
 import styles from '../styles/Styles.js';
-import {
-    StyleSheet,
-    SafeAreaView,
-    Text,
-    View,
-    Button,
-    Image,
-    FlatList
-} from 'react-native';
-
-const USER_ID = 'G29z3jX0xQhJ99n7Ig7hAudGgVq1';
-
-function Friend({route, navigation}) {
+import { StyleSheet, SafeAreaView, Text, View, Button, Image, FlatList } from 'react-native';
+import { connect } from 'react-redux';
 
 
-    const friend = route.params.friend;
-    const user_id = USER_ID;
+function Friend(props) {
+
+    const friend = props.route.params.friend;
 
     return (
         <View style={[styles.layout.span]}>
             <SafeAreaView style={[styles.layout.safeArea]}>
 
                 <View style={[styles.layout.topButtonArea]}>
-                    <StylisedButton onPress={() => navigation.goBack(null)} buttonText={""}>
+                    <StylisedButton onPress={() => props.navigation.goBack(null)} buttonText={""}>
                         <Image source = {require('../assets/back.bmp')}
                                resizeMode = 'contain'
                                style = {{ width: 20, height: 20 }}
@@ -39,7 +23,7 @@ function Friend({route, navigation}) {
 
                         backgroundColor='white' />
                     </StylisedButton>
-                    <StylisedButton onPress={() => {navigation.navigate('EditFriend', {friend: friend});}} buttonText={"Edit"}>
+                    <StylisedButton onPress={() => {props.navigation.navigate('EditFriend', {friend: friend});}} buttonText={"Edit"}>
                     </StylisedButton>
                 </View>
 
@@ -71,7 +55,7 @@ function Friend({route, navigation}) {
                             <Text style={styles.home.promptDividerText}>LOG WITH {friend.f_name.toUpperCase()}</Text>
                         </View>
                             <CheckinList
-                                user_id={user_id}
+                                user_id={props.user_id}
                                 friend_id={friend.id}
                                 name={friend.f_name}/>
 
@@ -101,4 +85,8 @@ function Friend({route, navigation}) {
     );
 }
 
-export default Friend;
+const mapStateToProps = (state) => ({
+    user_id: state.userReducer.user_id
+});
+
+export default connect(mapStateToProps)(Friend);

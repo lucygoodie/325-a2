@@ -6,56 +6,55 @@ import styles from '../styles/Styles.js';
 import { daysBetween, comparePrompts, frequencyInDays } from '../utils/helpers.js';
 import { get } from '../services/database.js';
 import { where } from "firebase/firestore";
-import {
-    Text,
-    FlatList,
-    View,
-    ActivityIndicator,
-    SectionList } from 'react-native';
+import { connect } from 'react-redux';
+import { loadFriends, loadFriendsMock } from '../redux/actions/friends_actions';
+import { Text, FlatList, View, ActivityIndicator, SectionList } from 'react-native';
 
-export default function PromptList(props) {
+const USE_MOCK = true;
 
-    const user_id = props.user_id;
+// todo change the urgency
+function setSections(friends) {
+    let today = new Date();
+    let birthdays = [];
+    let prompts = [];
+    friends.forEach(friend => {
+        let dob = new Date(friend.dob);
+        if ((dob.getDate() === today.getDate()) && (dob.getMonth() === today.getMonth())) {
+            birthdays.push({...friend, urgency: 0});
+        } else if (friend.overdueBy > 0) {
+            let urgency = 1; // todo make this something better
+            prompts.push({...friend, urgency: urgency});
+        }
+    });
+    return (birthdays.length > 0) ?
+        [{title: "Birthdays", data: birthdays}, {title: "Prompts", data: prompts.sort(comparePrompts)}] :
+        [{title: "Prompts", data: prompts.sort(comparePrompts)}];
+}
+
+function PromptList(props) {
+
+    function loadFriendsFunc(id) {
+        if (USE_MOCK) {
+            props.loadFriendsMock(props.user_id);
+        } else {
+            props.loadFriends(props.user_id);
+        }
+    }
 
     const [loading, setLoading] = useState(false);
     const [sectionedPrompts, setSectionedPrompts] = useState([]);
 
+    // only load friends once after component mounting
     useEffect(() => {
-        get("checkins", [where("user_id", "==", user_id)], "date")
-            .then((checkins) => {
-                get("connections", [where("user_id", "==", user_id)], "")
-                    .then( friends => {
-
-                        let birthdays = [];
-                        let overdue = [];
-
-                        // TODO
-                        // set the correct urgency
-
-                        friends.forEach( friend => {
-                            var friendCheckIns = (checkins.filter((c) => { return c.friend_id === friend.id}));
-                            var lastCheck = friendCheckIns.length > 0 ?
-                                daysBetween((new Date((friendCheckIns[friendCheckIns.length - 1]).date)), new Date()) : Number.MAX_VALUE;
-                            var howOverdue = lastCheck - frequencyInDays(friend.reminder_frequency);
-
-                            var obj = {...friend, daysSinceCheckIn: lastCheck, overdueBy: howOverdue};
-
-                            var today = new Date();
-                            var bday = new Date(friend.dob);
-
-                            if ((today.getDate() === bday.getDate()) && (today.getMonth() === bday.getMonth())){
-                                birthdays.push(obj);
-                            } else if (howOverdue > 0) {
-                                overdue.push(obj);
-                            }
-                        });
-
-                        setSectionedPrompts((birthdays.length > 0) ? [{title: "Birthdays", data: birthdays}, {title: "Prompts", data: overdue.sort(comparePrompts)}] :
-                        [{title: "Prompts", data: overdue.sort(comparePrompts)}] );
-                    });
-            });
-        setLoading(true);
+        loadFriendsFunc(props.user_id);
     }, []);
+
+    // set sectionedPrompts anytime after friends changes
+    useEffect(() => {
+        if (props.friends.length > 0) {
+            setSectionedPrompts(setSections(props.friends));
+            setLoading(true);
+        }}, [props.friends]);
 
     function renderPrompt ({ item }) {
         return (
@@ -84,3 +83,10 @@ export default function PromptList(props) {
         </View>
     );
 };
+
+const mapStateToProps = (state) => ({
+    user_id: state.userReducer.user_id,
+    friends: state.friendsReducer.friends,
+});
+
+export default connect(mapStateToProps, {loadFriends, loadFriendsMock}) (PromptList);
