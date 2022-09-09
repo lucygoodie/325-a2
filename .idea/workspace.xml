@@ -2,20 +2,647 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e16917f4-6146-426f-ab0c-1de30c06c5e1" name="Default Changelist" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/popup_redirect-a23784e6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/cordova/popup_redirect-a23784e6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/index-6bd8d405.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm2017/index-6bd8d405.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/index-0bcd930a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/esm5/index-0bcd930a.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/index-f3a96a92.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node-esm/index-f3a96a92.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/index-5a9d0579.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/node/index-5a9d0579.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/phone-54e6b3d3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/auth/dist/rn/phone-54e6b3d3.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/database/dist/test/deno.test.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/@firebase/firestore/dist/firestore/test/integration/api/provider.test.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/History.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/node_modules/isarray/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/node_modules/isarray/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/node_modules/isarray/component.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/node_modules/isarray/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/node_modules/isarray/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/AnimatedSensor/AnimatedSensorModule.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/LayoutAnimations/LayoutAnimationsProxy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/NativeModules/NativeReanimatedModule.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/NativeModules/NativeReanimatedModuleSpec.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Registries/EventHandlerRegistry.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Registries/MapperRegistry.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Registries/WorkletsCache.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/SharedItems/FrozenObject.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/SharedItems/MutableValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/SharedItems/MutableValueSetterProxy.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/SharedItems/RemoteObject.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/SharedItems/ShareableValue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Tools/FeaturesConfig.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Tools/JSIStoreValueUser.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Tools/Mapper.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Tools/RuntimeDecorator.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Tools/Scheduler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/Tools/WorkletEventHandler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/AnimatedSensor/AnimatedSensorModule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/LayoutAnimations/LayoutAnimationsProxy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/NativeModules/NativeReanimatedModule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/NativeModules/NativeReanimatedModuleSpec.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Registries/EventHandlerRegistry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Registries/MapperRegistry.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Registries/WorkletsCache.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/FrozenObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/HostFunctionHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/MutableValue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/MutableValueSetterProxy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/RemoteObject.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/RuntimeManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/ShareableValue.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/SharedParent.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SharedItems/ValueWrapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/SpecTools/ErrorHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/FeaturesConfig.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/JSIStoreValueUser.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/Mapper.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/PlatformDepMethodsHolder.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/ReanimatedHiddenHeaders.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/RuntimeDecorator.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/Scheduler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/headers/Tools/WorkletEventHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/hidden_headers/Logger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/hidden_headers/LoggerInterface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/Common/cpp/hidden_headers/SpeedChecker.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/empty.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-65-hermes.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-65-jsc.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-66-hermes.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-66-jsc.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-67-hermes.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-67-jsc.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-68-hermes.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-68-jsc.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-69-hermes.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/react-native-reanimated-69-jsc.aar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/rnVersionPatch/65/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/rnVersionPatch/66/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/rnVersionPatch/67/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/rnVersionPatch/68/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/rnVersionPatch/69/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/rnVersionPatch/backup/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/spotless.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/src/main/cpp/AndroidErrorHandler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/src/main/cpp/AndroidLogger.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/android/src/main/cpp/AndroidScheduler.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/LayoutReanimation/REAAnimationsManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/LayoutReanimation/REASnapshot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/LayoutReanimation/REAUIManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAAlwaysNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REABezierNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REABlockNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REACallFuncNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAClockNodes.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAConcatNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REACondNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/READebugNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAEventNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAFunctionNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAJSCallNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REANode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAOperatorNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAParamNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAPropsNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REASetNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAStyleNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REATransformNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Nodes/REAValueNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/REAEventDispatcher.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/REAModule.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/REANodesManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/REAUtils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/RNGestureHandlerStateManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Transitioning/RCTConvert+REATransition.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Transitioning/REAAllTransitions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Transitioning/REATransition.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Transitioning/REATransitionAnimation.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Transitioning/REATransitionManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/Transitioning/REATransitionValues.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/NativeMethods.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/NativeProxy.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/REAIOSErrorHandler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/REAIOSLogger.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/REAIOSScheduler.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/REAInitializer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/native/UIResponder+Reanimated.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/sensor/ReanimatedSensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/sensor/ReanimatedSensorContainer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/ios/sensor/ReanimatedSensorType.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/Animated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/ConfigHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/createAnimatedComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/Easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/animations/Animation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/animations/backwardCompatibleAnimWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/animations/decay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedAlways.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedBezier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedBlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedCall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedCallFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedClock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedClockTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedConcat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedCond.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedDebug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedOperator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedParam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedProps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedSet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedStartClock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedStopClock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/AnimatedValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/Core.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/InternalAnimatedValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/__mocks__/AnimatedProps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/core/createEventObjectProxyPolyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/__mocks__/evaluateOnce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/acc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/diffClamp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/evaluateOnce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/interpolate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/interpolateColors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/derived/onChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated1/operators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/Bezier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/Colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/Easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/NativeMethods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/NativeReanimated/NativeReanimated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/NativeReanimated/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/PlatformChecker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/PropAdapters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/__mocks__/MutableValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/__mocks__/NativeReanimated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/__mocks__/NativeReanimated.native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/animation/commonTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/animation/decay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/animation/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/animation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/commonTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/component/FlatList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/component/Image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/hook/Hooks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/hook/commonTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/hook/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/interpolateColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/interpolation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/jestUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/JSReanimated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/Mapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/MapperRegistry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/MutableValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/commonTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/js-reanimated/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/LayoutAnimationRepository.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/animationBuilder/BaseAnimationBuilder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/animationBuilder/ComplexAnimationBuilder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/animationBuilder/Keyframe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/animationBuilder/commonTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/animationBuilder/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/Bounce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/Default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/Fade.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/Flip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/Lightspeed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/Pinwheel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultAnimations/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultTransitions/CurvedTransition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultTransitions/EntryExitTransition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultTransitions/FadingTransition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultTransitions/JumpingTransition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultTransitions/LinearTransition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/defaultTransitions/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/layoutReanimation/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/lib/reanimated2/mock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/__mocks__/ReanimatedEventEmitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/__mocks__/ReanimatedModule.native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/Easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/animations/Animation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/animations/backwardCompatibleAnimWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/animations/decay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedAlways.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedBezier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedBlock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedCall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedCallFunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedClock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedClockTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedCode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedConcat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedCond.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedDebug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedFunction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedOperator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedParam.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedProps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedSet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedStartClock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedStopClock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/AnimatedValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/Core.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/InternalAnimatedValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/__mocks__/AnimatedProps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/core/createEventObjectProxyPolyfill.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/__mocks__/evaluateOnce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/acc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/color.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/diff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/diffClamp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/evaluateOnce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/interpolate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/interpolateColors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/derived/onChange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-reanimated/src/reanimated1/operators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/node_modules/hoist-non-react-statics/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-native-safe-area-view/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/NavigationTestUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/NavigationActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/NavigationActions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/StateUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/StateUtils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/ThemeColors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/ThemeColors.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getChildNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getChildNavigation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getChildRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getChildRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getChildrenNavigationCache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getChildrenNavigationCache.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getEventManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getEventManager.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/getNavigation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/navigators/createNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/navigators/createNavigator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/navigators/createSwitchNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/navigators/createSwitchNavigator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/KeyGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/KeyGenerator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/StackActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/StackActions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/StackRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/StackRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/SwitchActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/SwitchActions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/SwitchRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/SwitchRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/TabRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/TabRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/createConfigGetter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/createConfigGetter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/getNavigationActionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/getNavigationActionCreators.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/getScreenForRouteName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/getScreenForRouteName.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/pathUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/pathUtils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/validateRouteConfigMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/validateRouteConfigMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/validateScreenOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/routers/validateScreenOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/useTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/useTheme.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/docsUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/docsUrl.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/getActiveChildNavigationOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/getActiveChildNavigationOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/getSceneIndicesForInterpolationInputRange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/getSceneIndicesForInterpolationInputRange.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/invariant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/invariant.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/withDefaultValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/utils/withDefaultValue.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/NavigationContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/NavigationContext.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/NavigationEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/NavigationEvents.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/NavigationFocusEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/NavigationFocusEvents.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/SceneView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/SceneView.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/SwitchView/SwitchView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/SwitchView/SwitchView.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/ThemeContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/ThemeContext.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/withNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/withNavigation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/withNavigationFocus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/commonjs/views/withNavigationFocus.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/NavigationActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/NavigationActions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/StateUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/StateUtils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/ThemeColors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/ThemeColors.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getChildNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getChildNavigation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getChildRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getChildRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getChildrenNavigationCache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getChildrenNavigationCache.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getEventManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getEventManager.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/getNavigation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/navigators/createNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/navigators/createNavigator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/navigators/createSwitchNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/navigators/createSwitchNavigator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/KeyGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/KeyGenerator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/StackActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/StackActions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/StackRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/StackRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/SwitchActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/SwitchActions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/SwitchRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/SwitchRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/TabRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/TabRouter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/createConfigGetter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/createConfigGetter.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/getNavigationActionCreators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/getNavigationActionCreators.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/getScreenForRouteName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/getScreenForRouteName.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/pathUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/pathUtils.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/validateRouteConfigMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/validateRouteConfigMap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/validateScreenOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/routers/validateScreenOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/useTheme.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/useTheme.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/docsUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/docsUrl.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/getActiveChildNavigationOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/getActiveChildNavigationOptions.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/getSceneIndicesForInterpolationInputRange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/getSceneIndicesForInterpolationInputRange.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/invariant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/invariant.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/withDefaultValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/utils/withDefaultValue.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/NavigationContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/NavigationContext.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/NavigationEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/NavigationEvents.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/NavigationFocusEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/NavigationFocusEvents.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/SceneView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/SceneView.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/SwitchView/SwitchView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/SwitchView/SwitchView.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/ThemeContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/ThemeContext.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/withNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/withNavigation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/withNavigationFocus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/lib/module/views/withNavigationFocus.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/NavigationActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/StateUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/ThemeColors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/__fixtures__/createNavigationContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/__tests__/NavigationActions.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/__tests__/NavigationFocusEvents.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/__tests__/NavigationStateUtils.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/__tests__/getNavigation.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/getChildNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/getChildRouter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/getChildrenNavigationCache.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/getEventManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/getNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/navigators/__tests__/createSwitchNavigator.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/navigators/createNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/navigators/createSwitchNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/KeyGenerator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/StackActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/StackRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/SwitchActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/SwitchRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/TabRouter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/KeyGenerator.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/PathHandling.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/Routers.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/StackRouter.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/SwitchRouter.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/TabRouter.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/__snapshots__/validateRouteConfigMap.test.js.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/createConfigGetter.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/pathUtils.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/routerTestHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/__tests__/validateRouteConfigMap.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/createConfigGetter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/getNavigationActionCreators.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/getScreenForRouteName.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/pathUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/validateRouteConfigMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/routers/validateScreenOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/useTheme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/utils/docsUrl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/utils/getActiveChildNavigationOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/utils/getSceneIndicesForInterpolationInputRange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/utils/invariant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/utils/withDefaultValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/NavigationContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/NavigationEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/NavigationFocusEvents.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/SceneView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/SwitchView/SwitchView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/ThemeContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/__tests__/NavigationEvents.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/__tests__/NavigationFocusEvents.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/withNavigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/core/src/views/withNavigationFocus.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/ResourceSavingSceneView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/ResourceSavingSceneView.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/Scrollables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/Scrollables.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/Themed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/Themed.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/createAppContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/createAppContainer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/createKeyboardAwareNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/createKeyboardAwareNavigator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/createNavigationAwareScrollable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/createNavigationAwareScrollable.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/throwIfWrongVersion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/throwIfWrongVersion.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/utils/docsUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/utils/docsUrl.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/utils/invariant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/utils/invariant.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/withOrientation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/commonjs/withOrientation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/ResourceSavingSceneView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/ResourceSavingSceneView.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/Scrollables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/Scrollables.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/Themed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/Themed.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/createAppContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/createAppContainer.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/createKeyboardAwareNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/createKeyboardAwareNavigator.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/createNavigationAwareScrollable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/createNavigationAwareScrollable.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/throwIfWrongVersion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/throwIfWrongVersion.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/utils/docsUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/utils/docsUrl.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/utils/invariant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/utils/invariant.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/withOrientation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/lib/module/withOrientation.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/ResourceSavingSceneView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/Scrollables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/Themed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/__tests__/__snapshots__/createAppContainer.test.js.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/__tests__/__snapshots__/withOrientation.test.js.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/__tests__/createAppContainer.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/__tests__/withOrientation.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/createAppContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/createKeyboardAwareNavigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/createNavigationAwareScrollable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/throwIfWrongVersion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/utils/docsUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/utils/invariant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/@react-navigation/native/src/withOrientation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/query-string/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/query-string/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/query-string/license" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/query-string/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/query-string/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/build-info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/cjs/react-is.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/cjs/react-is.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/umd/react-is.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/node_modules/react-is/umd/react-is.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/src/deprecations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/src/navigators/__tests__/SwitchNavigator.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/src/navigators/__tests__/__snapshots__/SwitchNavigator.test.js.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/src/utils/docsUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-navigation/typescript/react-navigation.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/cjs/react-is.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/cjs/react-is.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/umd/react-is.development.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/node_modules/react-is/umd/react-is.production.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/components/Context.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/components/Provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/components/connect.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/invalidArgFactory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/mapDispatchToProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/mapStateToProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/mergeProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/selectorFactory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/verifySubselectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/connect/wrapMapToProps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/utils/useIsomorphicLayoutEffect.native.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/utils/useIsomorphicLayoutEffect.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/utils/verifyPlainObject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/react-redux/src/utils/warning.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CheckinList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CheckinList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FriendsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FriendsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PromptList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PromptList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/friends_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/friends_actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CheckIn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CheckinList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FriendsList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Prompt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PromptList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modals/Checkin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modals/Checkin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/Stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/Stack.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/user_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/user_actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends_reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friends.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/AddFriend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/EditFriend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friends.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Styles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +701,11 @@
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\redux\reducers" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\services" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\utils" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\styles" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\Home" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\EditFriend" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\Friend" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\AddFriend" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\assets" />
     </key>
   </component>
   <component name="RunManager">
@@ -108,7 +735,9 @@
       <workItem from="1661475666081" duration="7788000" />
       <workItem from="1662241405473" duration="17180000" />
       <workItem from="1662328440154" duration="29197000" />
-      <workItem from="1662409875450" duration="28728000" />
+      <workItem from="1662409875450" duration="35190000" />
+      <workItem from="1662508253902" duration="1199000" />
+      <workItem from="1662668087423" duration="29688000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1661394361612</created>
@@ -166,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662423683732</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="init commit">
+      <created>1662444914689</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662444914689</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,5 +826,23 @@
     </ignored-roots>
     <MESSAGE value="init commit" />
     <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/navigation/BottomTabs.js</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/modals/Checkin.js</url>
+          <line>52</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

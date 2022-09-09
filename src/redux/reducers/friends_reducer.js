@@ -6,7 +6,7 @@ import { SET_CHECKINS } from "../actions/friends_actions";
 import { daysBetween, comparePrompts, frequencyInDays } from '../../utils/helpers.js';
 
 const initialFriendsState = {
-    friends: [], // set check ins
+    friends: [], // holds information about the users friends and the checking with each friend
     prompts: [],
     birthdays: [],
 }
@@ -33,6 +33,7 @@ export function friendsReducer(state=initialFriendsState, action) {
                     };
 
                     friends.push(f);
+
                     // TODO set the correct urgency ???
                 }
             )

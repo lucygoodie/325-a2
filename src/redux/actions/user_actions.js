@@ -22,13 +22,22 @@ export const setLoggedIn = loggedIn => dispatch => {
 
 // todo add doc
 // https://firebase.google.com/docs/auth/web/start?hl=en&authuser=0#web-version-9
-export const login = (email, password) => (dispatch) => {
+export const login = (email, password, onSuccess) => (dispatch) => {
     const auth = getAuth();
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-            dispatch(setUser(userCredential.user));
-            dispatch(setLoggedIn(true));
+            dispatch({
+                type: SET_USER,
+                payload: userCredential.user,
+            });
+            dispatch({
+                type: SET_LOGGED_IN,
+                payload: true,
+            });
+            // dispatch(setUser());
+            // dispatch(setLoggedIn(true));
+            onSuccess();
         })
         .catch((error) => {
             console.error(error.code, error.message)

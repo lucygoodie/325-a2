@@ -107,13 +107,13 @@ export default styles = StyleSheet.create({
             height: 70,
         },
         promptText: {
-            flex: 14,
+            flex: 13,
             flexDirection: 'column',
         },
         promptHeading: {
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: "bold",
-            paddingTop: "3.5%",
+            paddingTop: "4.5%",
             paddingLeft: "4%",
             flex: 1,
         },
@@ -276,168 +276,83 @@ export default styles = StyleSheet.create({
         transform: [{ rotate: "-90deg" }],
         alignSelf: 'center',
     },
+    components: {
+        textInput: {
+            container: {
+                margin: 3,
+                height: 40,
+                borderColor: 'grey',
+                borderWidth: 1,
+                backgroundColor: 'white',
+                width: '90%',
+                alignSelf: 'center',
+                justifyContent: 'center',
+                borderRadius: 2.5,
+                // flex: 1,
+            },
+            content: {
+                paddingLeft: 15,
+                padding: 5,
+                fontSize: 14,
+            },
+        },
+        buttons: {
+            b1: {
+                margin: 3,
+                height: 40,
+                borderColor: '#445c5e',
+                borderWidth: 1,
+                backgroundColor: '#759a9e',
+                width: '90%',
+                justifyContent: 'center',
+                borderRadius: 2.5,
+                alignSelf: 'center',
+            },
+            b1_content: {
+                alignSelf: 'center',
+                padding: 5,
+                fontSize: 14,
+                fontWeight: "bold",
+                color: 'white',
+            }
+        },
+        header: {
+            h1: {
+                margin: 3,
+                height: 30,
+                borderColor: '#445c5e',
+                borderWidth: 1,
+                backgroundColor: '#759a9e',
+                width: '90%',
+                justifyContent: 'center',
+                borderRadius: 2.5,
+                alignSelf: 'center',
+            },
+            h1_content: {
+                alignSelf: 'center',
+                padding: 5,
+                fontSize: 14,
+                fontWeight: "bold",
+                color: 'white',
+            }
+        },
 
+    },
+    editFriend: {
+        image: {
+            borderRadius: 50,
+            width: 100,
+            height: 100,
+            borderColor: 'grey',
+            borderWidth: 0.5,
+            marginBottom: 0,
+        },
+        text: {
+            alignSelf: 'center',
+        },
+        searchInput: {
+                paddingLeft: 15,
+                paddingRight: 10,
+        },
+    },
 });
-
-
-    // ////////////////////// OK UNDER HERE IS JUST OLD CRAP
-    //
-    //
-    // mast1: {
-    //     container: {
-    //         borderColor: 'black',
-    //         borderWidth: 0.1,
-    //         width: "100%",
-    //         flexDirection: 'column',
-    //         height: "20%",
-    //         backgroundColor: backgroundColor,
-    //         justifyContent: 'space-between',
-    //         paddingTop: "5%",
-    //     },
-    //     content: {
-    //         flexDirection: 'row',
-    //         fontColor: 'black',
-    //         alignItems: 'center',
-    //         paddingLeft: 30,
-    //         paddingRight: 30,
-    //     },
-    //     contentCol: {
-    //         height: 80,
-    //         flexDirection: 'column',
-    //         fontColor: 'black',
-    //         paddingLeft: 30,
-    //         paddingRight: 30,
-    //     },
-    //     text: {
-    //         flexDirection: 'column',
-    //         marginLeft: 20,
-    //     },
-    //     header: {
-    //         fontSize: 25,
-    //         fontWeight: 'bold',
-    //     },
-    //     subtitle: {
-    //         fontSize: 12,
-    //         color: 'grey',
-    //     },
-    //     contactImage: {
-    //         borderRadius: 35,
-    //         width: 70,
-    //         height: 70,
-    //     },
-    //     buttonStrip: {
-    //         width: "100%",
-    //         height: 30,
-    //         flexDirection: 'row',
-    //         justifyContent: 'space-between',
-    //         paddingLeft: 20,
-    //         paddingRight: 20,
-    //         alignItems: 'center',
-    //         flex: 1,
-    //     },
-    //     friendsButtonStrip: {
-    //         width: "100%",
-    //         height: 30,
-    //         flexDirection: 'row',
-    //         justifyContent: 'flex-end',
-    //         paddingLeft: 20,
-    //         paddingRight: 20,
-    //         alignItems: 'center',
-    //     },
-    // },
-    //
-    // search: {
-    //     box: {
-    //         margin: 3,
-    //         height: 30,
-    //         borderColor: 'grey',
-    //         borderWidth: 1,
-    //         backgroundColor: 'white',
-    //         width: '100%',
-    //     },
-    //     input: {
-    //         paddingLeft: 15,
-    //         paddingRight: 10,
-    //     },
-    // },
-    //
-    // container: {
-    //     flex: 1,
-    //     flexDirection: 'column',
-    // },
-    // screen: {
-    //     flex: 5
-    // },
-    //
-    //     },
-    //
-    // friend1: {
-    //     infoContainer: {
-    //         flex: 1,
-    //         flexDirection: 'row',
-    //         backgroundColor: '#cfcfcf',
-    //     },
-    //     infoDetail: {
-    //         flex: 1,
-    //         backgroundColor: '#f2f2f2',
-    //         justifyContent: 'center',
-    //         // alignItems: 'center',
-    //         borderRadius: 5,
-    //         margin: 15,
-    //         paddingLeft: 15,
-    //     },
-    //     infoTextHeader: {
-    //         fontSize: 14,
-    //         fontWeight: 'bold',
-    //     },
-    //     infoTextSubtitle: {
-    //         fontSize: 14,
-    //     },
-    //     checkins: {
-    //         flex: 6,
-    //         backgroundColor: '#b3b3b3',
-    //
-    //     },
-    //     addCheckinButton: {
-    //
-    //     }
-    // },
-    // prompt: {
-    //     container: {
-    //         padding: 10,
-    //         marginVertical: 10,
-    //         marginHorizontal: 10,
-    //         backgroundColor: "#e0e0e0",
-    //         borderRadius: 10,
-    //     },
-    //     text:{
-    //         paddingLeft: "10%",
-    //     },
-    //     title: {
-    //         fontSize: 20,
-    //         fontWeight: "bold",
-    //     },
-    //     subtitle: {
-    //         fontSize: 14,
-    //         fontWeight: "bold",
-    //     },
-    // },
-    // checkin: {
-
-    // },
-
-
-    // editFriend: {
-    //     image: {
-    //         borderRadius: 50,
-    //         width: 100,
-    //         height: 100,
-    //         borderColor: 'grey',
-    //         borderWidth: 0.5,
-    //         marginBottom: 0,
-    //     },
-    //     text: {
-    //         alignSelf: 'center',
-    //     },
-    // },
-// );
