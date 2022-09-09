@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e16917f4-6146-426f-ab0c-1de30c06c5e1" name="Default Changelist" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/components/layout/BaseView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Content.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Mast.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/AddFriend/AddFriend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/AddFriend/AddFriend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/EditFriend/EditFriend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/EditFriend/EditFriend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friend/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/Friend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friends/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friends/Friends.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Settings/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Settings/Settings.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +108,7 @@
       <workItem from="1662328440154" duration="29197000" />
       <workItem from="1662409875450" duration="35190000" />
       <workItem from="1662508253902" duration="1199000" />
-      <workItem from="1662668087423" duration="33310000" />
+      <workItem from="1662668087423" duration="34249000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1661394361612</created>
@@ -169,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662709306695</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="init commit">
+      <created>1662713095987</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662713095987</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

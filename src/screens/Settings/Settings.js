@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styles from '../../styles/Styles.js';
 import Mast from '../../components/Mast'
-import { BaseView, Content } from '../../components/Layout.js';
-
+import BaseView from '../../components/layout/BaseView.js';
+import Content  from '../../components/layout/Content.js';
 
 import {
     Text,
@@ -22,9 +22,6 @@ function Settings() {
                 </View>
             </Mast>
         </View>
-            <Content>
-
-            </Content>
         </BaseView>
     );
 }

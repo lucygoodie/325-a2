@@ -5,8 +5,9 @@ import styles from '../../styles/Styles.js';
 import StylisedButton  from '../../components/StylisedButton.js';
 import FriendsList from './FriendsList.js';
 import { Text, View, Image, TextInput, SafeAreaView} from 'react-native';
-import { BaseView, Mast, Content } from '../../components/Layout.js';
-
+import BaseView from '../../components/layout/BaseView.js';
+import Mast from '../../components/layout/Mast.js';
+import Content  from '../../components/layout/Content.js';
 
 const Friends = ({navigation}) => {
 
@@ -14,7 +15,6 @@ const Friends = ({navigation}) => {
 
     return (
         <BaseView>
-            <Mast>
                 <View style={[styles.layout.topButtonArea, {justifyContent: 'flex-end',}]}>
                     <StylisedButton onPress={() => {navigation.navigate('AddFriend');}} buttonText={''}>
                         <Image source = {require('../../assets/plus.png')}
@@ -34,7 +34,6 @@ const Friends = ({navigation}) => {
                     </View>
 
                 </View>
-            </Mast>
                 <Content>
                     <FriendsList navigation={navigation}></FriendsList>
                 </Content>

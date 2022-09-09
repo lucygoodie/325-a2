@@ -3,7 +3,10 @@ import styles from '../../styles/Styles.js';
 import { connect } from 'react-redux';
 import { login, loginMock } from '../../redux/actions/user_actions';
 import { Text, View, SafeAreaView, TextInput, TouchableOpacity, Image} from 'react-native';
-import { BaseView } from '../../components/Layout.js';
+import BaseView from '../../components/layout/BaseView.js';
+import Mast from '../../components/layout/Mast.js';
+import Content  from '../../components/layout/Content.js';
+
 
 const USE_MOCK = false; // todo remove this stuff when I hand in the assignment
 

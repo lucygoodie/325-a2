@@ -7,7 +7,10 @@ import { StyleSheet, SafeAreaView, Text, View, Button, Image, FlatList, Modal, T
 import { connect } from 'react-redux';
 import { useState } from 'react';
 import  BoldButton, {boldButton}  from '../../components/BoldButton.js'
-import { BaseView, Mast, Content } from '../../components/Layout.js';
+import BaseView from '../../components/layout/BaseView.js';
+import Mast from '../../components/layout/Mast.js';
+import Content  from '../../components/layout/Content.js';
+
 
 function Friend(props) {
 
@@ -25,7 +28,6 @@ function Friend(props) {
                     }}>
                     <Checkin onExit={() => {setModalVisible(false);}} friend={friend.f_name + " " + friend.l_name}></Checkin>
                 </Modal>
-                <Mast>
                 <View style={[styles.layout.topButtonArea]}>
                     <StylisedButton onPress={() => props.navigation.goBack(null)} buttonText={""}>
                         <Image source = {require('../../assets/back.bmp')}
@@ -45,7 +47,6 @@ function Friend(props) {
                         <Text style={styles.mast.text.heading}>{friend.f_name + " " + friend.l_name}</Text>
                     </View>
                 </View>
-                </Mast>
                 <Content>
 
                     <View style={[styles.home.promptListContainer, {flexDirection: 'row', flex: 2, paddingRight: "0.5%", marginBottom: "2%"}]}>

@@ -1,7 +1,7 @@
 import { View, SafeAreaView } from 'react-native';
 import styles from '../styles/Styles.js';
 
-function BaseView(props) {
+ function BaseView(props) {
     return (
         <View style={[styles.layout.span, props.modalOpacity]}>
             <SafeAreaView style={[styles.layout.safeArea]}>

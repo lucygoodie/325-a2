@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/Styles.js';
-import Mast from '../../components/Mast.js';
 import StylisedButton, { stylisedButton } from '../../components/StylisedButton.js';
 import { Text, View, Image, TouchableOpacity, TextInput } from 'react-native';
-import { BaseView, Content } from '../../components/Layout.js';
-
+import BaseView from '../../components/layout/BaseView.js';
+import Mast from '../../components/layout/Mast.js';
+import Content  from '../../components/layout/Content.js';
 
 function EditFriend(props) {
 
