@@ -1,18 +1,15 @@
 
 // TODO write some docs
 
-import { get } from '../../services/database.js';
+import { get, put } from '../../services/database.js';
 import { where } from "firebase/firestore";
 
 export const LOAD_FRIENDS = 'LOAD_FRIENDS';
 export const SET_FRIENDS = 'SET_FRIENDS';
-export const SET_CHECKINS = 'SET_CHECKINS';
+export const SET_OUT_OF_DATE = 'SET_OUT_OF_DATE';
 
 
-// TODO
-// pull the friends and the checkins and store in this list....
 export const loadFriends = (user_id) => (dispatch) => {
-
     get("connections", [where("user_id", "==", user_id)], "")
         .then( friends => {
             get("checkins", [where("user_id", "==", user_id)], "date")
@@ -24,6 +21,50 @@ export const loadFriends = (user_id) => (dispatch) => {
                 });
         });
 };
+
+export const addFriend = (f_name, l_name, dob, reminder_frequency, user_id) => (dispatch) => {
+
+    put('connections',
+        {
+            dob: dob,
+            f_name: f_name,
+            l_name: l_name,
+            reminder_frequency: reminder_frequency,
+            user_id: user_id,
+        }).then(
+            dispatch({
+                type: SET_OUT_OF_DATE,
+                payload: {out_of_date: true}
+            }));
+};
+
+export const editFriend = (f_name, l_name, dob, reminder_frequency, user_id) => {
+    // put('connections',
+    //     {
+    //         dob: dob,
+    //         f_name: f_name,
+    //         l_name: l_name,
+    //         reminder_frequency: reminder_frequency,
+    //         user_id: user_id,
+    //     }).then(res => {console.log(res)});
+};
+
+export const addCheckin = (date, friend_id, notes, type, user_id) => (dispatch) => {
+    put('checkins',
+        {
+            date: date,
+            friend_id: friend_id,
+            notes: notes,
+            type: type,
+            user_id: user_id,
+        }).then(
+        dispatch({
+            type: SET_OUT_OF_DATE,
+            payload: {out_of_date: true}
+        }));
+};
+
+
 
 export const loadFriendsMock = (user_id) => (dispatch) => {
     dispatch({

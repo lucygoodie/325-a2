@@ -1,12 +1,14 @@
 import styles from '../styles/Styles.js';
 import { Text, TouchableOpacity, View } from 'react-native';
 
-export default function StylisedButton(props) {
+// Custom button component
+
+export default function CustomButton4(props) {
     return (
             <TouchableOpacity onPress={props.onPress}>
-                <View style={styles.mast.buttons}>
+                <View style={styles.components.customButton4.container}>
                     {props.children}
-                    <Text style={styles.mast.buttons.text}>{props.buttonText}</Text>
+                    <Text style={styles.components.customButton4.content}>{props.buttonText}</Text>
                 </View>
             </TouchableOpacity>
 

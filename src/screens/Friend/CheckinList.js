@@ -2,23 +2,20 @@ import React, { useState, useEffect } from 'react';
 import { renderSeparator } from "../../components/RenderSeparator.js";
 import { renderFooter } from "../../components/RenderFooter.js";
 import  CheckInItem  from "./CheckInItem.js";
-import {comparePrompts, getSection} from "../../utils/helpers.js";
+import {comparePrompts, formatReminderFrequency, getSection} from "../../utils/helpers.js";
 import styles from '../../styles/Styles.js';
 import { connect } from 'react-redux';
-import {
-    FlatList,
-    View,
-    ActivityIndicator,
-    Text, SectionList
-} from 'react-native';
+import { FlatList, View, ActivityIndicator, Text, SectionList } from 'react-native';
+import Header from '../../components/Header.js';
+import Detail from "../../components/Detail";
 
+
+// set sections for checkins so they are grouped by month
 function setSections(checkins) {
     var sortedList = [];
-
     checkins.forEach(checkin => {
         sortedList.push({...checkin, section: getSection(checkin.date)});
     });
-
     var sections = [...new Set(sortedList.map(item => item.section))].map(item => {
         var datas = sortedList.filter((c) => { return c.section === item});
         // this needs to be a list
@@ -28,7 +25,6 @@ function setSections(checkins) {
 }
 
 function CheckinList(props) {
-
     const [sectionedCheckins, setSectionedCheckins] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -36,49 +32,38 @@ function CheckinList(props) {
         const checkins = props.friends.find(friend => friend.id === (props.friend_id)).checkins;
         setSectionedCheckins(setSections(checkins));
         setLoading(true);
-        }, []);
+        }, [props.friends]);
+
+
 
     function renderCheckIn ({ item }) {
         let splitDate = item.date.split('-');
-
         return (
-            <CheckInItem
-                type={item.type}
-                notes={item.notes}
-                date={splitDate[2] + '/' + splitDate[1]}
-                name={props.name}
-            />
+            <CheckInItem type={item.type} notes={item.notes} date={splitDate[2] + '/' + splitDate[1]} name={props.name}/>
         );
     };
 
-    // ACTUALLY WANT TO USE SECTION LIST -> SORTED BY MONTH/YEAR SECTIONS
-
     return (
-
-        <View style = {[styles.home.promptListContainer, {marginTop: "0%", paddingRight: "0.5%"}]}>
+        <View style={styles.screens.friend.checkinList.container}>
             {sectionedCheckins.length > 0 ?
-            <View style={{flex: 10, zIndex: 1, position: 'absolute', width: "100%", bottom: "4%"}}>
-
-
+                <View style={styles.screens.friend.checkinList.list}>
                     <SectionList
+                        persistentScrollbar={true}
                         sections={sectionedCheckins}
                         renderItem={renderCheckIn}
                         keyExtractor={(item, index) => item + index}
-                        ItemSeparatorComponent={renderSeparator}
+                        ItemSeparatorComponent={() => {return <View style={{height: 20}}/>}}
                         ListFooterComponent={renderFooter(loading)}
-                        renderSectionHeader={({ section: { title } }) =>
-                            (<View style={styles.home.promptDivider}>
-                                <Text style={styles.home.promptDividerText}>{title.toUpperCase()}</Text>
-                            </View>)}
+                        renderSectionHeader={({section: {title}}) =>
+                            <Header title={title}
+                                    additionalTextStyling={{color: '#7d8082'}}
+                                    additionalStyling={{margin: 20, width: '90%', backgroundColor: '#e9edf0', borderWidth: 0, marginLeft: '0%'}}/>}
                     />
-
-
-
-            </View>
+                </View>
                 :
-                <Text>
-                    No checkins found...
-                </Text>
+                <Detail title={"No check ins found"}
+                        info={"Check in with friend below"}
+                        additionalStyling={{flex: 1.15, alignItems: 'center', backgroundColor: '#ededed', margin: 20}}/>
             }
 
         </View>

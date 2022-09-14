@@ -1,15 +1,12 @@
-import React  from 'react';
 import styles from '../styles/Styles.js';
-import {
-    Text,
-    TouchableOpacity
-} from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 
-// props holds an onPress, and f_name/l_name
+// List item to be rendered in a List component
+
 export default function ListItem(props) {
     return (
-        <TouchableOpacity onPress={props.onPress} style={styles.list.item}>
-            <Text style={styles.list.name}>{props.f_name + " " + props.l_name}</Text>
+        <TouchableOpacity onPress={props.onPress} style={styles.components.listItem.container}>
+            <Text style={styles.components.listItem.content}>{props.f_name + " " + props.l_name}</Text>
         </TouchableOpacity>
     );
 };

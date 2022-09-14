@@ -1,8 +1,7 @@
-import { collection, getDocs, query, where, orderBy, limit } from "firebase/firestore";
+import { collection, getDocs, addDoc, query, where, orderBy, limit } from "firebase/firestore";
 import { db } from '../../firebase-config.js';
 
-export async function get(collection_name, where, order, single=false)
-{
+export async function get(collection_name, where, order, single=false) {
     const connection = collection(db, collection_name);
     let q = query(connection);
 
@@ -24,4 +23,13 @@ export async function get(collection_name, where, order, single=false)
         console.log(err);
     }
 
+};
+
+export async function put(collection_name, json) {
+    const connection = collection(db, collection_name);
+    try {
+        const docRef = await addDoc(connection, json);
+    } catch (err) {
+        console.log(err);
+    }
 };

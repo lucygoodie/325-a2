@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import { PermissionsAndroid } from "react-native";
 
 const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"];
 
-const frequency = ["None", "Weekly", "Fornightly", "Monthly", "BiMonthly"];
+const frequency = ["None", "Weekly", "Fornightly", "Monthly"];
 
 const checkinType = ["Birthday", "messaged", "had a call with", "In person"];
 
@@ -69,4 +70,25 @@ const getSection = (date) => {
     return (month + " " + splitDate[0]);
 };
 
-export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText, getSection };
+const requestCameraPermission = async () => {
+    try {
+        const granted = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.CAMERA,
+            {
+                title: "Camera Permission",
+                message:
+                    "App requires access to your camera " +
+                    "to add friends pictures.",
+                buttonNeutral: "Ask Me Later",
+                buttonNegative: "Cancel",
+                buttonPositive: "OK"
+            }
+        );
+        return (granted === PermissionsAndroid.RESULTS.GRANTED);
+
+    } catch (err) {
+        console.warn(err);
+    }
+};
+
+export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText, getSection, requestCameraPermission };

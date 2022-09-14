@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
-import {
-    Text,
-    View,
-    TouchableOpacity
-} from 'react-native';
+import { Text, View, TouchableOpacity} from 'react-native';
 import styles from '../../styles/Styles.js';
 
-const urgency_colours = ['#b0c4d9', '#e8c5c1', '#fcd7ac', '#fff8cc'];
-
-// name, lastCheckIn, onPress, urgency
 
 export default function Prompt(props) {
 
@@ -16,22 +9,21 @@ export default function Prompt(props) {
         "No check-ins with this friend" : ("Last checked in " + props.lastCheckIn + " days ago");
 
     return (
-        <View>
-
-            <TouchableOpacity style={styles.home.promptContainer} onPress={props.onPress}>
-
-                <View style={styles.home.promptUrgency}>
-                    <View style={{flex: 1, backgroundColor: urgency_colours[props.urgency]}}/>
+            <TouchableOpacity style={styles.screens.home.prompt.container} onPress={props.onPress}>
+                <View style={styles.screens.home.prompt.urgency}>
+                    <Urgency urgency = {props.urgency}/>
                 </View>
-
-                <View style={styles.home.promptText}>
-                    <Text style={styles.home.promptHeading}>{props.name}</Text>
-                    <Text style={styles.home.promptSubtitle}>{subtitle}</Text>
+                <View style={styles.screens.home.prompt.text}>
+                    <Text style={styles.screens.home.prompt.text.heading}>{props.name}</Text>
+                    <Text style={styles.screens.home.prompt.text.subtitle}>{subtitle}</Text>
                 </View>
-
             </TouchableOpacity>
-
-        </View>
-
     );
 }
+
+function Urgency(props) {
+    const urgency_colours = ['#b0c4d9', '#e8c5c1', '#fcd7ac', '#fff8cc'];
+    return (
+        <View style={{flex: 1, backgroundColor: urgency_colours[props.urgency]}}/>
+    );
+};

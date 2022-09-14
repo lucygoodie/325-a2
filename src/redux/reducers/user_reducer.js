@@ -3,9 +3,11 @@
 import { SET_USER, SET_LOGGED_IN} from '../actions/user_actions';
 
 const initialState = {
-    user: undefined, // todo can I try persist the user data?
+    user: undefined,
     user_id: '',
     loggedIn: false,
+    cameraPermissions: false,
+    promptSettings: 'off',
 }
 
 function userReducer(state = initialState, action) {

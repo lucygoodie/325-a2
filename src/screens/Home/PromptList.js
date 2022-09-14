@@ -9,6 +9,7 @@ import { where } from "firebase/firestore";
 import { connect } from 'react-redux';
 import { loadFriends, loadFriendsMock } from '../../redux/actions/friends_actions';
 import { Text, FlatList, View, ActivityIndicator, SectionList } from 'react-native';
+import Header from '../../components/Header.js';
 
 const USE_MOCK = false;
 
@@ -33,21 +34,21 @@ function setSections(friends) {
 
 function PromptList(props) {
 
-    function loadFriendsFunc(id) {
-        if (USE_MOCK) {
-            props.loadFriendsMock(props.user_id);
-        } else {
-            props.loadFriends(props.user_id);
-        }
-    }
-
     const [loading, setLoading] = useState(false);
     const [sectionedPrompts, setSectionedPrompts] = useState([]);
 
     // only load friends once after component mounting
     useEffect(() => {
-        loadFriendsFunc(props.user_id);
+        (USE_MOCK) ?
+            props.loadFriendsMock(props.user_id)
+            : props.loadFriends(props.user_id);
     }, []);
+
+    if (props.out_of_date) {
+        USE_MOCK ?
+            props.loadFriendsMock(props.user_id)
+            : props.loadFriends(props.user_id);
+    }
 
     // set sectionedPrompts anytime after friends changes
     useEffect(() => {
@@ -68,7 +69,7 @@ function PromptList(props) {
     };
 
     return (
-        <View style = {styles.list.container}>
+        <View style={styles.screens.home.promptList}>
             <SectionList
                 persistentScrollbar={true}
                 sections={sectionedPrompts}
@@ -76,20 +77,16 @@ function PromptList(props) {
                 keyExtractor={(item, index) => item + index}
                 ItemSeparatorComponent={renderSeparator}
                 ListFooterComponent={renderFooter(loading)}
-                renderSectionHeader={({ section: { title } }) =>
-                    (<View style={[styles.components.header.h1, {width: '95%'}]}>
-                        <Text style={styles.components.header.h1_content}>{title}</Text>
-                    </View>)}
+                renderSectionHeader={({section: {title}}) => <Header title={title}/>}
             />
         </View>
     );
 };
 
-// MAYBE PROMPTS SHOULD BE HANDED AS A PROP
-
 const mapStateToProps = (state) => ({
     user_id: state.userReducer.user_id,
     friends: state.friendsReducer.friends,
+    out_of_date: state.friendsReducer.out_of_date,
 });
 
 export default connect(mapStateToProps, {loadFriends, loadFriendsMock}) (PromptList);

@@ -45,9 +45,9 @@ function BottomTabs({ navigation }) {
                 tabBarIcon: ({focused}) => (
                     <View style={styles.navigation.bottomTabs.tabScreen}>
                         <Image
-                            source={require('../assets/home.png')}
+                            source={require('../assets/friends.png')}
                             resizeMode='contain'
-                            style={{ width: 30, height: 30, tintColor: focused ? inFocusColour : outOfFocusColour}}
+                            style={{ width: 35, height: 35, tintColor: focused ? inFocusColour : outOfFocusColour}}
                         />
                         <Text style={{fontSize: 12, color: focused ? inFocusColour : outOfFocusColour}}>
                             Friends
@@ -60,7 +60,7 @@ function BottomTabs({ navigation }) {
                 tabBarIcon: ({focused}) => (
                     <View style={styles.navigation.bottomTabs.tabScreen}>
                         <Image
-                            source={require('../assets/home.png')}
+                            source={require('../assets/settings.png')}
                             resizeMode='contain'
                             style={{ width: 30, height: 30, tintColor: focused ? inFocusColour : outOfFocusColour}}
                         />

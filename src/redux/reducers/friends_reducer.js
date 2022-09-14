@@ -2,21 +2,27 @@
 
 import { LOAD_FRIENDS } from "../actions/friends_actions";
 import { SET_FRIENDS } from "../actions/friends_actions";
-import { SET_CHECKINS } from "../actions/friends_actions";
+import { SET_OUT_OF_DATE } from "../actions/friends_actions";
+
 import { daysBetween, comparePrompts, frequencyInDays } from '../../utils/helpers.js';
 
 const initialFriendsState = {
     friends: [], // holds information about the users friends and the checking with each friend
     prompts: [],
-    birthdays: [],
+    out_of_date: true,
 }
+//
+// export function friendReducer(state=initialFriendsState, action) {
+//     case SET_FRIEND:
+//
+// }
+
 
 export function friendsReducer(state=initialFriendsState, action) {
     switch (action.type) {
         case SET_FRIENDS:
 
             let friends = [];
-            let birthdays = [];
             let overdue = [];
 
             action.payload.friends.forEach(
@@ -38,7 +44,11 @@ export function friendsReducer(state=initialFriendsState, action) {
                 }
             )
 
-            return {...state, friends: friends, prompts: overdue, birthdays: birthdays }
+            return {...state, friends: friends, prompts: overdue, out_of_date: false};
+            // return {...state, friends: [...state.friends, friends], prompts: [...state.prompts, overdue], birthdays: birthdays }
+
+        case SET_OUT_OF_DATE:
+            return {...state, out_of_date: action.payload.out_of_date};
 
         default:
             return state;

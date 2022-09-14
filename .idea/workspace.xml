@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e16917f4-6146-426f-ab0c-1de30c06c5e1" name="Default Changelist" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/friends.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CustomTextInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RadioButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/TopButtonStrip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/AddEditFriend/AddEditFriend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/app_header.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/app_header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/back.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/0.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoldButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FormInput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Mast.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RenderFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RenderFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RenderSeparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RenderSeparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StylisedButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomButton4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/BaseView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/BaseView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Mast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Mast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modals/Checkin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modals/Checkin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modals/CheckinExit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modals/DatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modals/DeleteConfirmation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigation/Stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/Stack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/authentication_actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/friends_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/friends_actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/user_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/user_actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/AddFriend/AddFriend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/EditFriend/EditFriend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friend/CheckInItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/CheckInItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friend/CheckinList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/CheckinList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friend/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/Friend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friends/Friends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friends/Friends.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Friends/FriendsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friends/FriendsList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Home/Prompt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home/Prompt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Home/PromptList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home/PromptList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Settings/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Settings/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/database.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/database.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/helpers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/helpers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +117,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\assets" />
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\Home" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\EditFriend" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\Friend" />
-      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\AddFriend" />
       <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\assets" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\assets\checkin_types" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\modals" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\modals\Checkin" />
+      <recent name="C:\Users\Lucy\Documents\Uni\2022\SWEN325\A2\325-a2-oconnelucy\325-a2\src\screens\Home" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,7 +165,15 @@
       <workItem from="1662328440154" duration="29197000" />
       <workItem from="1662409875450" duration="35190000" />
       <workItem from="1662508253902" duration="1199000" />
-      <workItem from="1662668087423" duration="34381000" />
+      <workItem from="1662668087423" duration="34528000" />
+      <workItem from="1662771602030" duration="24026000" />
+      <workItem from="1662840995969" duration="13620000" />
+      <workItem from="1662928010784" duration="16391000" />
+      <workItem from="1662962593657" duration="14292000" />
+      <workItem from="1663015731662" duration="11915000" />
+      <workItem from="1663036654882" duration="14040000" />
+      <workItem from="1663108681101" duration="2509000" />
+      <workItem from="1663121751265" duration="3818000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1661394361612</created>
@@ -184,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662713978253</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="init commit">
+      <created>1662714112816</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662714112816</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,14 +297,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/navigation/BottomTabs.js</url>
           <line>10</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/modals/Checkin.js</url>
-          <line>52</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/components/Detail.js</url>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
