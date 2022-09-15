@@ -1,19 +1,20 @@
+
+// list of prompts for the user, sorted into sections
+
 import React, { useState, useEffect } from 'react';
 import Prompt from "./Prompt";
 import { renderSeparator } from "../../components/RenderSeparator.js";
 import { renderFooter } from "../../components/RenderFooter.js";
 import styles from '../../styles/Styles.js';
-import { daysBetween, comparePrompts, frequencyInDays } from '../../utils/helpers.js';
+import { daysBetween, comparePrompts, frequencyInDays, getUrgency } from '../../utils/helpers.js';
 import { get } from '../../services/database.js';
 import { where } from "firebase/firestore";
 import { connect } from 'react-redux';
-import { loadFriends, loadFriendsMock } from '../../redux/actions/friends_actions';
-import { Text, FlatList, View, ActivityIndicator, SectionList } from 'react-native';
+import { loadFriends } from '../../redux/actions/friends_actions';
+import { Text, View, SectionList } from 'react-native';
 import Header from '../../components/Header.js';
 
-const USE_MOCK = false;
 
-// todo change the urgency
 function setSections(friends) {
     let today = new Date();
     let birthdays = [];
@@ -23,8 +24,7 @@ function setSections(friends) {
         if ((dob.getDate() === today.getDate()) && (dob.getMonth() === today.getMonth())) {
             birthdays.push({...friend, urgency: 0});
         } else if (friend.overdueBy > 0) {
-            let urgency = 1; // todo make this something better
-            prompts.push({...friend, urgency: urgency});
+            prompts.push({...friend, urgency: getUrgency(friend.overdueBy)});
         }
     });
     return (birthdays.length > 0) ?
@@ -39,15 +39,11 @@ function PromptList(props) {
 
     // only load friends once after component mounting
     useEffect(() => {
-        (USE_MOCK) ?
-            props.loadFriendsMock(props.user_id)
-            : props.loadFriends(props.user_id);
+        props.loadFriends(props.user_id);
     }, []);
 
     if (props.out_of_date) {
-        USE_MOCK ?
-            props.loadFriendsMock(props.user_id)
-            : props.loadFriends(props.user_id);
+        props.loadFriends(props.user_id);
     }
 
     // set sectionedPrompts anytime after friends changes
@@ -63,7 +59,7 @@ function PromptList(props) {
                 name={item.f_name + " " + item.l_name}
                 lastCheckIn={item.daysSinceCheckIn}
                 onPress={() => { props.navigation.navigate('Friend', {friend: item}); }}
-                urgency={1}
+                urgency={item.urgency}
             />
         );
     };
@@ -89,4 +85,4 @@ const mapStateToProps = (state) => ({
     out_of_date: state.friendsReducer.out_of_date,
 });
 
-export default connect(mapStateToProps, {loadFriends, loadFriendsMock}) (PromptList);
+export default connect(mapStateToProps, {loadFriends}) (PromptList);

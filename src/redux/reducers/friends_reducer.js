@@ -1,3 +1,4 @@
+
 // Friends reducer file, stores the state of the users friends in the app
 
 import { LOAD_FRIENDS } from "../actions/friends_actions";
@@ -11,11 +12,6 @@ const initialFriendsState = {
     prompts: [],
     out_of_date: true,
 }
-//
-// export function friendReducer(state=initialFriendsState, action) {
-//     case SET_FRIEND:
-//
-// }
 
 
 export function friendsReducer(state=initialFriendsState, action) {
@@ -29,7 +25,7 @@ export function friendsReducer(state=initialFriendsState, action) {
                 friend => {
                     var friendCheckIns = (action.payload.checkins.filter((c) => { return c.friend_id === friend.id}));
                     var lastCheck = friendCheckIns.length > 0 ?
-                        daysBetween((new Date((friendCheckIns[friendCheckIns.length - 1]).date)), new Date()) : Number.MAX_VALUE;
+                        daysBetween((new Date((friendCheckIns[0]).date)), new Date()) : Number.MAX_VALUE;
                     var howOverdue = lastCheck - frequencyInDays(friend.reminder_frequency);
                     var f = {
                         ...friend,
@@ -39,13 +35,10 @@ export function friendsReducer(state=initialFriendsState, action) {
                     };
 
                     friends.push(f);
-
-                    // TODO set the correct urgency ???
                 }
             )
 
             return {...state, friends: friends, prompts: overdue, out_of_date: false};
-            // return {...state, friends: [...state.friends, friends], prompts: [...state.prompts, overdue], birthdays: birthdays }
 
         case SET_OUT_OF_DATE:
             return {...state, out_of_date: action.payload.out_of_date};

@@ -1,16 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home/Home.js';
 import Friends from '../screens/Friends/Friends.js';
 import Settings from '../screens/Settings/Settings.js';
 import styles from '../styles/Styles.js';
-import {
-    Text,
-    View,
-    Image
-} from 'react-native';
+import {Text, View, Image} from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -32,11 +27,16 @@ function BottomTabs({ navigation }) {
                         <Image
                             source={require('../assets/home.png')}
                             resizeMode='contain'
-                            style={{ width: 30, height: 30, tintColor: focused ? inFocusColour : outOfFocusColour}}
+                            style={{
+                                width: 30,
+                                height: 30,
+                                tintColor: focused ? inFocusColour : outOfFocusColour
+                            }}
                         />
-                        <Text style={{fontSize: 12, color: focused ? inFocusColour : outOfFocusColour}}>
-                            Home
-                        </Text>
+                        <Text style={{
+                            fontSize: 12,
+                            color: focused ? inFocusColour : outOfFocusColour
+                        }}>Home</Text>
                     </View>
                 ),
             }}/>
@@ -47,11 +47,16 @@ function BottomTabs({ navigation }) {
                         <Image
                             source={require('../assets/friends.png')}
                             resizeMode='contain'
-                            style={{ width: 35, height: 35, tintColor: focused ? inFocusColour : outOfFocusColour}}
+                            style={{
+                                width: 35,
+                                height: 35,
+                                tintColor: focused ? inFocusColour : outOfFocusColour
+                            }}
                         />
-                        <Text style={{fontSize: 12, color: focused ? inFocusColour : outOfFocusColour}}>
-                            Friends
-                        </Text>
+                        <Text style={{
+                            fontSize: 12,
+                            color: focused ? inFocusColour : outOfFocusColour
+                        }}>Friends</Text>
                     </View>
                 )
             }}/>
@@ -62,11 +67,16 @@ function BottomTabs({ navigation }) {
                         <Image
                             source={require('../assets/settings.png')}
                             resizeMode='contain'
-                            style={{ width: 30, height: 30, tintColor: focused ? inFocusColour : outOfFocusColour}}
+                            style={{
+                                width: 30,
+                                height: 30,
+                                tintColor: focused ? inFocusColour : outOfFocusColour
+                            }}
                         />
-                        <Text style={{fontSize: 12, color: focused ? inFocusColour : outOfFocusColour}}>
-                            Settings
-                        </Text>
+                        <Text style={{
+                            fontSize: 12,
+                            color: focused ? inFocusColour : outOfFocusColour
+                        }}>Settings</Text>
                     </View>
                 )
             }}/>

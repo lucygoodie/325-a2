@@ -257,21 +257,140 @@ export default styles = StyleSheet.create({
             },
         },
     },
+    navigation: {
+        bottomTabs: {
+            tabBarStyle: {
+                position: 'absolute',
+                backgroundColor: '#ffffff',
+                height: '10%',
+            },
+            tabScreen: {
+                alignItems: 'center',
+                justifyContent: 'center',
+                top: 5,
+            },
+        },
+    },
     modals: {
         checkIn: {
+            fullScreen: {
+                width: "100%",
+                height: "100%"
+            },
+            container: {
+                width: "100%",
+                height: "80%",
+                backgroundColor: "white",
+                borderWidth: 1,
+                bottom: "-4%",
+                position: "absolute",
+                borderRadius: 10,
+                alignItems: 'center',
+            },
+            content: {
+                height: '76%',
+                width: '95%',
+                top: '4%',
+                alignSelf: "center",
+                backgroundColor: 'white',
+                justifySelf: 'center',
+            },
+            form: {
+                width: "95%",
+                flex: 1,
+                flexDirection: 'column',
+                alignItems:'flex-start',
+                justifyContent: 'space-between',
+                padding: '5%'
+            },
             header: {
                 fontSize: 22,
                 fontWeight: 'bold',
                 alignSelf: 'center',
-                marginTop: 30,
+                marginTop: '10%',
+                padding: 0
+            },
+            spacer: {
+                height: "2%"
             },
         },
     },
+
     screens: {
-        addFriend: {},
-        editFriend: {},
         friend: {
-            checkinItem: {},
+            checkinItem: {
+                container: {
+                    flexDirection: 'row'
+                },
+                bubble: {
+                    flex: 3,
+                    flexDirection: 'column',
+                    content: {
+                        backgroundColor: '#e0e0e0',
+                        borderRadius: 5,
+                        paddingLeft: '5%',
+                        paddingBottom:'5%',
+                        padding: '3%',
+                        flex: 1
+                    },
+                    subtitle: {
+                        fontSize: 14,
+                        fontWeight: "bold",
+                    },
+                    notes: {
+                        flex: 1,
+                        paddingLeft: "13%",
+                        fontSize: 12
+                    },
+                },
+                spacer: {
+                    flex: 0.2,
+                },
+                spacer1: {
+                    flex: 1,
+                },
+                container1: {
+                    flex:3,
+                },
+                container2: {
+                    flex: 1,
+                    flexDirection: 'row',
+                    paddingTop: '4%'
+                },
+                date: {
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                    backgroundColor: 'grey',
+                    color: 'white',
+                    fontSize: 10,
+                },
+                circle: {
+                    container: {
+                        flex:1,
+                        paddingLeft: '1%',
+                    },
+                    backgroundColor: '#cccccc',
+                    borderRadius: 50,
+                    width: 12,
+                    height: 12,
+                    left: 1.5,
+                    top: 1.5
+                },
+                triangle: {
+                    width: 0,
+                    height: 0,
+                    backgroundColor: "transparent",
+                    borderStyle: "solid",
+                    borderLeftWidth: 7,
+                    borderRightWidth: 7,
+                    borderBottomWidth: 14,
+                    borderLeftColor: "transparent",
+                    borderRightColor: "transparent",
+                    borderBottomColor: "#e0e0e0",
+                    transform: [{ rotate: "-90deg" }],
+                    alignSelf: 'center',
+                },
+            },
             checkinList: {
                 container: {
                     backgroundColor: 'white',
@@ -406,6 +525,27 @@ export default styles = StyleSheet.create({
             },
         },
         login: {
+            spacer1: {
+                flex: 2,
+            },
+            spacer2: {
+                flex: 3,
+            },
+            spacer3: {
+                height: 30,
+            },
+            content: {
+                justifyContent: 'center',
+                alignItems: 'center',
+                flexBasis: 50,
+                flex:2.5,
+                flexDirection: 'column'
+            },
+            text: {
+                fontSize: 40,
+                marginBottom: 10,
+                fontWeight: 'bold'
+            },
             signUp: {
                 text: {
                     height: 30,
@@ -424,298 +564,128 @@ export default styles = StyleSheet.create({
                 }
             },
         },
-        settings: {},
-    },
-
-
-
-
-
-
-
-
-
-    layout: {
-        span: {
-            flex: 1,
-            backgroundColor: backgroundColor,
-        },
-        safeArea: {
-            flexDirection: 'column',
-            flex: 1,
-            backgroundColor: backgroundColor,
-        },
-        topButtonArea: {
-            flex: 2,
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            paddingLeft: "1%",
-            paddingRight: "5%",
-            marginTop: "8%",
-        },
-        mast: {
-            flex: 2,
-            backgroundColor: backgroundColor,
-            justifyContent: 'flex-end',
-        },
-        contentArea: {
-            flex: 20,
-            backgroundColor: "#e3e3e3",
-        },
-        unsafeBottomArea: {
-            backgroundColor: "#e3e3e3",
-            bottom: 0,
-        },
-    },
-
-    mast: {
-        buttons: {
-            flexDirection: 'row',
-            paddingLeft: "4%",
-            justifyContent: 'center',
-            alignItems: 'center',
-            color: 'white',
-
-            text: {
-                fontWeight: "bold",
-                fontSize: 16,
-                color: "#545454",
-            },
-        },
-        text: {
-            heading: {
+        settings: {
+            mastText: {
                 fontSize: 25,
                 fontWeight: 'bold',
-                paddingLeft: "5%"
+                paddingLeft: "10%",
+                paddingBottom: "5%",
             },
-            subtitle: {
-                fontSize: 12,
-                color: 'grey',
-                flexDirection: 'column',
-                paddingLeft: "5%"
+            spacer1: {
+                height: '5%'
+            },
+            spacer2: {
+                height: '3%'
+            },
+            notifications: {
+                container: {
+                    backgroundColor: 'white',
+                    borderRadius: 3,
+                    borderWidth: 0.2,
+                    height: '25%',
+                    width: '90%',
+                    justifyContent: 'center',
+                    alignSelf: 'center',
+                    paddingTop: '5%',
+                    paddingBottom: '5%',
+                },
+                text: {
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                    paddingLeft: "10%",
+                    paddingBottom: "5%",
+                },
+                radioButton: {
+                    width: '90%',
+                    height: '50%',
+                    paddingLeft: '5%'
+                },
+            },
+            login: {
+                container: {
+                    backgroundColor: 'white',
+                    borderRadius: 3,
+                    borderWidth: 0.2,
+                    height: '20%',
+                    width: '90%',
+                    justifyContent: 'center',
+                    alignSelf: 'center',
+                    paddingTop: '5%',
+                    paddingBottom: '5%'
+                },
+                text: {
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                    paddingLeft: "10%",
+                    paddingBottom: "5%",
+                },
             },
         },
-        search: {
-            box: {
-                margin: 3,
-                height: 30,
-                borderColor: 'grey',
-                borderWidth: 1,
-                backgroundColor: 'white',
-                width: '90%',
+        addEditFriend: {
+            mastText: {
+                fontSize: 25,
+                fontWeight: 'bold',
+                paddingBottom: "5%",
                 alignSelf: 'center',
+            },
+            content: {
+                flexDirection: 'column',
+                flex: 1,
+            },
+            imageSection: {
                 justifyContent: 'center',
-            },
-            input: {
-                paddingLeft: 15,
-                paddingRight: 10,
-            },
-        },
-    },
-
-    home: {
-        promptListContainer: {
-            backgroundColor: 'white',
-            borderColor: '#b0b0b0',
-            borderWidth: 2,
-            borderRadius: 3,
-            margin: "4%",
-            flex: 1,
-            paddingRight: "10%",
-            padding: "0.5%",
-        },
-        promptContainer: {
-            borderColor: '#757575',
-            borderWidth: 0.5,
-            borderRightWidth: 3,
-            borderBottomWidth: 3,
-            margin: "2%",
-            backgroundColor: "#e0e0e0",
-            borderRadius: 4,
-            flexDirection: 'row',
-            flex: 1,
-        },
-        promptText: {
-            flex: 13,
-            flexDirection: 'column',
-        },
-        promptHeading: {
-            fontSize: 16,
-            fontWeight: "bold",
-            paddingTop: "4.5%",
-            paddingLeft: "4%",
-            flex: 1,
-        },
-        promptSubtitle: {
-            fontSize: 14,
-            paddingLeft: "4%",
-            paddingBottom: "3.5%",
-            flex: 1,
-            color: '#707070',
-        },
-        promptUrgency: {
-            flex: 1,
-            paddingLeft: "4%",
-        },
-        promptShadow: {
-            backgroundColor: 'black',
-            position: 'absolute',
-            marginTop: -100,
-        },
-        promptDivider: {
-            backgroundColor: '#8d9899',
-            alignItems: 'center',
-            margin: "2%",
-            padding: "1%",
-            borderRadius: 3,
-        },
-        promptDividerText: {
-            color: 'white',
-            fontWeight: "bold",
-        },
-    },
-
-    list: {
-        container: {
-            margin: 10,
-            paddingTop: 10,
-            borderColor: '#b0b0b0',
-            borderWidth: 1,
-            borderRadius: 3,
-            flex: 1,
-
-        },
-        separator: {
-            height: 1,
-            backgroundColor: '#e3e3e3',
-            margin: '1%',
-        },
-        footer: {
-            paddingVertical: 20,
-            borderTopWidth: 1,
-            borderColor: '#CED0CE',
-        },
-
-        item: {
-            padding: 7,
-            marginVertical: 4,
-            marginHorizontal: 16,
-            backgroundColor: '#d1d1d1',
-            borderRadius: 2,
-        },
-        name: {
-            paddingLeft: 5,
-            fontSize: 14,
-            textColor: 'black',
-        },
-    },
-    friend: {
-        image: {
-            borderRadius: 35,
-            width: 70,
-            height: 70,
-        },
-        mast: {
-            flexDirection: 'row',
-            alignSelf: 'flex-start',
-            paddingLeft: "10%",
-            bottom: "5%",
-        },
-        infoContainer: {
-            flexDirection: 'column',
-            justifyContent: 'center',
-            paddingLeft: "3%",
-            height: "75%",
-        },
-        infoDetail: {
-            flex: 1,
-            backgroundColor: 'white',
-            justifyContent: 'center',
-            borderRadius: 5,
-            margin: 15,
-            paddingLeft: 15,
-        },
-        infoTextHeader: {
-            fontSize: 14,
-            fontWeight: 'bold',
-        },
-        infoTextSubtitle: {
-            fontSize: 14,
-        },
-        addCheckinButton: {},
-        checkins: {
-            flex: 6,
-            backgroundColor: '#b3b3b3',
-
-        },
-    },
-    navigation: {
-        bottomTabs: {
-            tabBarStyle: {
-                position: 'absolute',
-                backgroundColor: '#ffffff',
-                height: '10%',
-            },
-            tabScreen: {
                 alignItems: 'center',
-                justifyContent: 'center',
-                top: 5,
+                height: '25%',
             },
-        },
-    },
-    render: {
-        separator: {
-            height: 1,
-            width: '86%',
-            backgroundColor: '#CED0CE',
-            marginLeft: '5%',
-        },
-        footer: {
-            paddingVertical: 20,
-            borderTopWidth: 1,
-            borderColor: '#CED0CE',
-        },
-    },
-    checkins: {
-        listContainer: {
-            padding: 10,
-            marginVertical: 10,
-            marginHorizontal: 10,
-            backgroundColor: "#e0e0e0",
-            borderRadius: 10,
-            flexDirection: 'column'
-        },
-        date: {
-            flex: 1,
-            backgroundColor: "black",
-            borderRadius: 10,
-        },
-        title: {
-            fontSize: 10,
-            fontWeight: "bold",
-            paddingLeft: "2%",
-        },
-        subtitle: {
-            fontSize: 14,
-            fontWeight: "bold",
-        },
-    },
-    editFriend: {
-        image: {
-            borderRadius: 50,
-            width: 100,
-            height: 100,
-            borderColor: 'grey',
-            borderWidth: 0.5,
-            marginBottom: 0,
-        },
-        text: {
-            alignSelf: 'center',
-        },
-        searchInput: {
-                paddingLeft: 15,
-                paddingRight: 10,
+            image: {
+                borderRadius: 50,
+                width: 100,
+                height: 100,
+                borderColor: 'grey',
+                borderWidth: 0.5,
+                marginBottom: 0,
+            },
+            spacer1: {
+                flexGrow:1,
+            },
+            spacer2: {
+                flexGrow:3,
+            },
+            spacer3: {
+                flex:2,
+            },
+            container1: {
+                flexBasis: 75,
+                flex:1,
+            },
+            container2: {
+                flexBasis: 75,
+                flex:0.1,
+                flexDirection: 'row',
+                marginLeft: '2.5%',
+                marginRight: '2.5%',
+                justifyContent: 'center',
+            },
+            container3: {
+                flexBasis: 75,
+                flex:0.1,
+            },
+            container4: {
+                flexBasis: 75,
+                flex:0.1,
+                marginLeft: '5%',
+                marginRight: '5%',
+            },
+            name: {
+              container: {
+                  flexGrow: 1,
+                  flex:0.1,
+                  flexDirection: 'column'
+              },
+                content: {
+                    paddingLeft: '5%'
+                },
+            },
         },
     },
 });

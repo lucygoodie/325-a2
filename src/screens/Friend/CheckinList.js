@@ -1,3 +1,6 @@
+
+// list of checkins with a given friend sorted into month
+
 import React, { useState, useEffect } from 'react';
 import { renderSeparator } from "../../components/RenderSeparator.js";
 import { renderFooter } from "../../components/RenderFooter.js";
@@ -18,7 +21,6 @@ function setSections(checkins) {
     });
     var sections = [...new Set(sortedList.map(item => item.section))].map(item => {
         var datas = sortedList.filter((c) => { return c.section === item});
-        // this needs to be a list
         return {title: item, data: datas}
     });
     return sections;
@@ -33,8 +35,6 @@ function CheckinList(props) {
         setSectionedCheckins(setSections(checkins));
         setLoading(true);
         }, [props.friends]);
-
-
 
     function renderCheckIn ({ item }) {
         let splitDate = item.date.split('-');

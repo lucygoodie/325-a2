@@ -1,4 +1,5 @@
-// TODO write some docs
+
+// Actions to be executed in order to access the users data
 
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
 

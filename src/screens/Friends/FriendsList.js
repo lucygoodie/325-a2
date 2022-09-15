@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ListItem from "../../components/ListItem";
 import { renderSeparator } from "../../components/RenderSeparator.js";
 import { renderFooter } from "../../components/RenderFooter.js";
 import styles from '../../styles/Styles.js';
-import {compareName, comparePrompts} from "../../utils/helpers.js";
-import { get } from '../../services/database.js';
-import { where } from "firebase/firestore";
+import { compareName, comparePrompts } from "../../utils/helpers.js";
 import { connect } from 'react-redux';
-import { loadFriends, loadFriendsMock } from '../../redux/actions/friends_actions';
+import { loadFriends } from '../../redux/actions/friends_actions';
 import { FlatList, View } from 'react-native';
-
-const USE_MOCK = false;
 
 
 function Friends(props) {
@@ -23,17 +19,11 @@ function Friends(props) {
 
     // only load friends once after component mounting
     useEffect(() => {
-        USE_MOCK ?
-            props.loadFriendsMock(props.user_id)
-            : props.loadFriends(props.user_id);
+        props.loadFriends(props.user_id);
         setLoading(true); // todo  ?
     }, []);
 
-    if (props.out_of_date) {
-        USE_MOCK ?
-            props.loadFriendsMock(props.user_id)
-            : props.loadFriends(props.user_id);
-    }
+    if (props.out_of_date) {props.loadFriends(props.user_id);}
 
     function renderItem ({ item }) {
         return (
@@ -65,4 +55,4 @@ const mapStateToProps = (state) => ({
     out_of_date: state.friendsReducer.out_of_date,
 });
 
-export default connect(mapStateToProps, {loadFriends, loadFriendsMock}) (Friends);
+export default connect(mapStateToProps, { loadFriends }) (Friends);

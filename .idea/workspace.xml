@@ -5,57 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e16917f4-6146-426f-ab0c-1de30c06c5e1" name="Default Changelist" comment="init commit">
-      <change afterPath="$PROJECT_DIR$/src/assets/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/checkin_types/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/friends.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CustomTextInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/RadioButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TopButtonStrip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/AddEditFriend/AddEditFriend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/app_header.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/app_header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/back.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/back.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/0.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/1.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/2.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/checkin_types/3.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoldButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FormInput.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Mast.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RenderFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RenderFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RenderSeparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RenderSeparator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StylisedButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomButton4.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/BaseView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/BaseView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Mast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Mast.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modals/Checkin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modals/Checkin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modals/CheckinExit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modals/DatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modals/DeleteConfirmation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modals/DeleteConfirmation.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/navigation/BottomTabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/BottomTabs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/navigation/Stack.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigation/Stack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/authentication_actions.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/friends_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/friends_actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/actions/user_actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/user_actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/reducers/friends_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/friends_reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/user_reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/AddFriend/AddFriend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/EditFriend/EditFriend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/AddEditFriend/AddEditFriend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/AddEditFriend/AddEditFriend.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Friend/CheckInItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/CheckInItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Friend/CheckinList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/CheckinList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/Friend/Friend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Friend/Friend.js" afterDir="false" />
@@ -173,7 +133,7 @@
       <workItem from="1663015731662" duration="11915000" />
       <workItem from="1663036654882" duration="14040000" />
       <workItem from="1663108681101" duration="2509000" />
-      <workItem from="1663121751265" duration="3818000" />
+      <workItem from="1663121751265" duration="18200000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1661394361612</created>
@@ -266,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662714112816</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="init commit">
+      <created>1663125643990</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663125643990</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,11 +261,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/navigation/BottomTabs.js</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Detail.js</url>
           <option name="timeStamp" value="9" />

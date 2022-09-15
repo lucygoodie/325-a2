@@ -1,9 +1,12 @@
+
+// displays information about a users friend
+
 import  CheckinList  from './CheckinList.js';
 import Checkin from '../../modals/Checkin.js';
 import { formatBirthdayHelper, formatReminderFrequency } from "../../utils/helpers.js"
 import CustomButton4 from '../../components/CustomButton4.js';
 import styles from '../../styles/Styles.js';
-import { StyleSheet, SafeAreaView, Text, View, Button, Image, FlatList, Modal, TouchableOpacity, Pressable } from 'react-native';
+import { Text, View, Image, Modal } from 'react-native';
 import { connect } from 'react-redux';
 import { useState } from 'react';
 import  CustomButton3 from '../../components/CustomButton3.js'
@@ -19,9 +22,13 @@ function Friend(props) {
 
     const friend = props.route.params.friend;
     const [modalVisible, setModalVisible] = useState(false);
+
     return (
         <BaseView modalOpacity={{opacity: modalVisible === false ? 1 : 0.4}}>
-            <Modal animationType="slide" transparent={true} visible={modalVisible}>
+            <Modal
+                animationType="slide"
+                transparent={true}
+                visible={modalVisible}>
                 <Checkin onExit={() => {setModalVisible(false);}}
                          friend={friend}
                          visible={modalVisible}/>
@@ -30,7 +37,10 @@ function Friend(props) {
                 <CustomButton4 onPress={() => props.navigation.goBack(null)} buttonText={""}>
                     <Image source = {require('../../assets/back.png')}
                            resizeMode = 'contain'
-                           style = {{ width: 20, height: 20 }}/>
+                           style = {{
+                               width: 20,
+                               height: 20
+                           }}/>
                 </CustomButton4>
                 <CustomButton4 onPress={() => {props.navigation.navigate('AddEditFriend', {friend: friend, isEdit: true});}} buttonText={"Edit"} />
             </TopButtonStrip>

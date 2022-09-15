@@ -1,3 +1,6 @@
+
+// home page of the app that displays the users list of friend prompts
+
 import { Text, View} from 'react-native';
 
 import BaseView from '../../components/layout/BaseView.js';

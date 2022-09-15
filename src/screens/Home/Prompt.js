@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
-import { Text, View, TouchableOpacity} from 'react-native';
+
+// check in prompt to render a given prompt with a given friend
+
+import { useState } from 'react';
+import { Text, View, TouchableOpacity } from 'react-native';
 import styles from '../../styles/Styles.js';
 
 
@@ -24,6 +27,9 @@ export default function Prompt(props) {
 function Urgency(props) {
     const urgency_colours = ['#b0c4d9', '#e8c5c1', '#fcd7ac', '#fff8cc'];
     return (
-        <View style={{flex: 1, backgroundColor: urgency_colours[props.urgency]}}/>
+        <View style={{
+            flex: 1,
+            backgroundColor: urgency_colours[props.urgency]
+        }}/>
     );
 };

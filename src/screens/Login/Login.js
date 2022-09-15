@@ -1,8 +1,11 @@
+
+// screen shown to user when app launches and requires the user to login
+
 import { useState, useEffect } from 'react';
 import styles from '../../styles/Styles.js';
 import { connect } from 'react-redux';
-import { login, loginMock } from '../../redux/actions/user_actions';
-import { Text, View, SafeAreaView, TextInput, TouchableOpacity, Image} from 'react-native';
+import { login } from '../../redux/actions/user_actions';
+import { Text, View, TouchableOpacity } from 'react-native';
 import BaseView from '../../components/layout/BaseView.js';
 import Mast from '../../components/layout/Mast.js';
 import Content  from '../../components/layout/Content.js';
@@ -17,17 +20,18 @@ function Login(props) {
     return (
         <BaseView>
             <Content additionalStyling={{backgroundColor: '#c3d7d9'}}>
-                <View style={{flex: 2,}}/>
-                <View style={{justifyContent: 'center', alignItems: 'center', flexBasis: 50, flex:2.5, flexDirection: 'column'}}>
-                    <Text style={{fontSize: 40, marginBottom: 10,  fontWeight: 'bold'}}>in Touch</Text>
+                <View style={styles.screens.login.spacer1}/>
+                <View style={styles.screens.login.content}>
+                    <Text style={styles.screens.login.text}>in Touch</Text>
 
-                    <CustomTextInput placeholder={'Username'}  additionalStyling={{flexBasis: 40, flex:0.1}}
+                    <CustomTextInput placeholder={'Username'}
+                                     additionalStyling={{flexBasis: 40, flex:0.1}}
                                      onChangeText={text => setUsernameInput(text)}/>
                     <CustomTextInput
                         placeholder={'Password'}
                         additionalStyling={{flexBasis: 40, flex:0.1}}
                         onChangeText={text => setPasswordInput(text)} secure={true}/>
-                    <View style={{height: 30,}}/>
+                    <View style={styles.screens.login.spacer3}/>
                     <CustomButton1 onPress={() => {props.login(usernameInput, passwordInput, (()=>{props.navigation.navigate("BottomTabs")}))}}
                                    text={'Log in'}
                                    additionalStyling={{flexBasis: 40, flex:0.1}}/>
@@ -38,7 +42,7 @@ function Login(props) {
                         <Text style={styles.screens.login.signUp.link}>Sign up</Text>
                     </TouchableOpacity>
                 </View>
-                <View style={{flex: 3,}}/>
+                <View style={styles.screens.login.spacer2}/>
             </Content>
         </BaseView>
     );

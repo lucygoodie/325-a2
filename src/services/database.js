@@ -1,3 +1,6 @@
+
+// file which handles calls to firestore database
+
 import { collection, getDocs, addDoc, query, where, orderBy, limit } from "firebase/firestore";
 import { db } from '../../firebase-config.js';
 
@@ -7,13 +10,9 @@ export async function get(collection_name, where, order, single=false) {
 
     where.forEach( w => { q = query(q, w); });
 
-    if (order.length > 0) {
-        q = query(q, orderBy(order, "desc"));
-    }
+    if (order.length > 0) q = query(q, orderBy(order, "desc"));
 
-    if (single) {
-        q = query(q, limit(1));
-    }
+    if (single) q = query(q, limit(1));
 
     try {
         const result = await getDocs(q);
@@ -22,7 +21,6 @@ export async function get(collection_name, where, order, single=false) {
     } catch (err) {
         console.log(err);
     }
-
 };
 
 export async function put(collection_name, json) {

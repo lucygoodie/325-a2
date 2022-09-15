@@ -1,3 +1,5 @@
+// helper functions that can be used within the app
+
 import React, { useState } from 'react';
 import { PermissionsAndroid } from "react-native";
 
@@ -91,4 +93,11 @@ const requestCameraPermission = async () => {
     }
 };
 
-export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText, getSection, requestCameraPermission };
+const getUrgency = (overdueBy) => {
+    if (overdueBy <= 2) return 3;
+    if (overdueBy <= 7) return 2;
+    if (overdueBy > 14) return 1;
+
+};
+
+export {formatDateHelper, formatBirthdayHelper, formatReminderFrequency, compareName, compareDate, daysBetween, comparePrompts, frequencyInDays, checkInText, getSection, requestCameraPermission, getUrgency };

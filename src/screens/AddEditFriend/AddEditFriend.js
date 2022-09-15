@@ -1,3 +1,6 @@
+
+// used to add or edit a friend of the user
+
 import React, { useState, useEffect } from 'react';
 import styles from '../../styles/Styles.js';
 import CustomButton4 from '../../components/CustomButton4.js';
@@ -10,42 +13,28 @@ import CustomButton1 from '../../components/CustomButton1.js'
 import RadioButton from '../../components/RadioButton.js'
 import CustomTextInput from '../../components/CustomTextInput.js'
 import {formatReminderFrequency, requestCameraPermission } from "../../utils/helpers";
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
+import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
 import { connect } from 'react-redux';
 import { addFriend, editFriend } from '../../redux/actions/friends_actions';
-
-
 
 const freqs = [
     {value: 'None', key: 0},
     {value: 'Weekly', key: 1},
     {value: 'Fornightly', key: 2},
     {value: 'Monthly', key: 3},
-]
-
-
+];
 
 function AddEditFriend(props) {
 
     function editFriendPost() {
-        var f = freqs.find(item => item.value === friend.reminder_frequency).key;
-        props.editFriend(
-            firstName,
-            lastName,
-            dob,
-            f,
-            props.user_id);
-        props.navigation.goBack(null)
+        // var f = freqs.find(item => item.value === friend.reminder_frequency).key;
+        // props.editFriend(firstName, lastName, dob, f, props.user_id);
+        // props.navigation.goBack(null);
     };
 
     function addFriendPost() {
         var f = freqs.find(item => item.value === reminderFreq).key;
-        props.addFriend(
-            firstName,
-            lastName,
-            dob,
-            f,
-            props.user_id);
+        props.addFriend(firstName, lastName, dob, f, props.user_id);
         props.navigation.goBack(null);
     }
 
@@ -57,7 +46,7 @@ function AddEditFriend(props) {
     const [reminderFreq, setReminderFreq] = useState('');
 
     const isEdit = props.route.params.isEdit;
-    let userId = "";
+    let user_id = "";
 
     useEffect(() => {
         if (isEdit) {
@@ -76,56 +65,55 @@ function AddEditFriend(props) {
                 <CustomButton4 onPress={() => {emptyForm ? props.navigation.goBack(null) : console.log('Implement confirmation Modal')}} buttonText={""}>
                     <Image source = {require('../../assets/back.png')}
                            resizeMode = 'contain'
-                           style = {{ width: 20, height: 20 }}/>
+                           style = {{
+                               width: 20,
+                               height: 20
+                           }}/>
                 </CustomButton4>
                 <CustomButton4 onPress={ isEdit ? editFriendPost : addFriendPost} buttonText={"Confirm"}/>
             </TopButtonStrip>
             <Mast>
-                <View style={styles.mast.text}>
-                    <Text style={[{
-                        fontSize: 25,
-                        fontWeight: 'bold',
-                        paddingBottom: "5%",
-                        alignSelf: 'center'}]}>{ isEdit? (firstName + " " + lastName) : 'Add Friend'}</Text>
-                </View>
+                    <Text style={styles.screens.addEditFriend.mastText}>{ isEdit? (firstName + " " + lastName) : 'Add Friend'}</Text>
             </Mast>
             <Content>
-                    <View style={{flexDirection: 'column', flex:1}}>
+                    <View style={styles.screens.addEditFriend.content}>
 
-                        <View style={{borderColor: 'black', justifyContent: 'center', alignItems: 'center', height: 150}}>
+                        <View style={styles.screens.addEditFriend.imageSection}>
                             <Image source = {require('../../assets/placeholder.bmp')}
                                    resizeMode = 'contain'
-                                   style={styles.editFriend.image}/>
+                                   style={styles.screens.addEditFriend.image}/>
                             <TouchableOpacity onPress={()=>{if(requestCameraPermission()) console.log('Should launch camera');}}>
-                                <Text >Edit photo</Text>
+                                <Text>Edit photo</Text>
                             </TouchableOpacity>
                         </View>
-
-                        <View style={{flexGrow:1}}/>
-
-                        <View style={{flexBasis: 75, flex:1, }}>
-                            <View style={{flexBasis: 75, flex:0.1, flexDirection: 'row', marginLeft: '2.5%', marginRight: '2.5%', justifyContent: 'center'}}>
-
-                                <View style={{flexGrow: 1, flex:0.1,flexDirection: 'column'}}>
-                                    <Text style={{paddingLeft: '5%'}}>First name *</Text>
+                        <View style={styles.screens.addEditFriend.spacer1}/>
+                        <View style={styles.screens.addEditFriend.container1}>
+                            <View style={styles.screens.addEditFriend.container2}>
+                                <View style={styles.screens.addEditFriend.name.container}>
+                                    <Text style={styles.screens.addEditFriend.name.content}>First name *</Text>
                                     <CustomTextInput value={isEdit ? firstName : undefined} placeholder={isEdit ? undefined : 'First name'} onChangeText={(firstName) => {setFirstName(firstName)}} additionalStyling={{flex:1,}}/>
                                 </View>
-
-                                <View style={{flexGrow: 1, flex:0.1,flexDirection: 'column'}}>
-                                    <Text style={{paddingLeft: '5%'}}>Last name *</Text>
-                                    <CustomTextInput value={isEdit ? lastName : undefined} placeholder={isEdit ? undefined : 'Last name'} onChangeText={(lastName) => {setLastName(lastName)}} additionalStyling={{flex:1,}}/>
+                                <View style={styles.screens.addEditFriend.name.container}>
+                                    <Text style={styles.screens.addEditFriend.name.content}>Last name *</Text>
+                                    <CustomTextInput
+                                        value={isEdit ? lastName : undefined}
+                                        placeholder={isEdit ? undefined : 'Last name'}
+                                        onChangeText={(lastName) => {setLastName(lastName)}}
+                                        additionalStyling={{flex:1,}}/>
                                 </View>
-
                             </View>
                         </View>
-
-                        <View style={{flexBasis: 75, flex:0.1, }}>
-                                    <Text style={{paddingLeft: '5%'}}>Birthday *</Text>
-                                    <CustomTextInput numeric={true} value={isEdit ? dob : undefined} placeholder={isEdit ? undefined : 'YYYY-MM-DD'} onChangeText={(dob) => {setDob(dob)}} additionalStyling={{flex:1,}}/>
+                        <View style={styles.screens.addEditFriend.container3}>
+                                    <Text style={styles.screens.addEditFriend.name.content}>Birthday *</Text>
+                                    <CustomTextInput
+                                        numeric={true}
+                                        value={isEdit ? dob : undefined}
+                                        placeholder={isEdit ? undefined : 'YYYY-MM-DD'}
+                                        onChangeText={(dob) => {setDob(dob)}}
+                                        additionalStyling={{flex:1,}}/>
                         </View>
-                        <View style={{flexGrow:1}}/>
-
-                        <View style={{flexBasis: 75, flex:0.1, marginLeft: '5%', marginRight: '5%', }}>
+                        <View style={styles.screens.addEditFriend.spacer1}/>
+                        <View style={styles.screens.addEditFriend.container4}>
                             <Text>Reminder frequency *</Text>
                             <RadioButton items={freqs}
                                          selected={reminderFreq}
@@ -133,7 +121,7 @@ function AddEditFriend(props) {
                             <View style={{height: "2%"}}/>
                         </View>
 
-                        <View style={{flexGrow:3,}}/>
+                        <View style={styles.screens.addEditFriend.spacer2}/>
                         <View style={{flex: 1, }}>
                             {isEdit ?
                                 <CustomButton1
@@ -143,9 +131,8 @@ function AddEditFriend(props) {
                                 :
                                 <View/>
                             }
-                                </View>
-
-                        <View style={{flex: 2,}}></View>
+                        </View>
+                        <View style={styles.screens.addEditFriend.spacer3}></View>
                     </View>
             </Content>
         </BaseView>
