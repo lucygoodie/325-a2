@@ -41,8 +41,8 @@ const compareDate = (date1, date2) => {
 };
 
 const comparePrompts = (p1, p2) => {
-    if (p1.daysSinceCheckIn > p2.daysSinceCheckIn) return -1;
-    if (p1.daysSinceCheckIn < p2.daysSinceCheckIn) return 1;
+    if (p1.urgency > p2.urgency) return 1;
+    if (p1.urgency < p2.urgency) return -1;
     return 0;
 };
 
